@@ -144,6 +144,10 @@ h2 {
   vertical-align: middle;
   margin-right: 10px; }
 
+.fluidpic {
+  width: 100%;
+  height: auto; }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -312,7 +316,8 @@ body, html {
   line-height: 1.4rem; }
 
 .audience {
-  background: #3737DE;
+  background: #3737DE url(public/images/svg/audbg.svg) right bottom no-repeat;
+  background-size: contain;
   padding: 40px 0; }
 
 .tabs_block {
@@ -679,7 +684,7 @@ body, html {
 
 .devnetwork {
   background: #3737DE url(public/images/svg/selfdev.svg) left bottom no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 50px; }
 
 .all_dev {
@@ -731,14 +736,12 @@ body, html {
   font-weight: 400; }
 
 .prod_pic {
-  width: 240px;
-  height: 400px;
-  background: #3737DE;
+  width: 260px;
+  height: 430px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: absolute;
-  right: -30px;
-  top: 60px; }
+  right: -20px;
+  top: 40px; }
 
 .prod_cont {
   width: calc(100% - 450px);
@@ -763,10 +766,42 @@ body, html {
   width: 70%; }
 
 .prod_status {
-  background: coral;
   height: 100px;
   width: 70%;
-  margin: 30px 0; }
+  margin: 30px 0 50px 0; }
+
+.status_block {
+  margin-bottom: 20px;
+  font-size: 0; }
+
+.status_title {
+  color: #3737DE;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 4px; }
+
+.status_perc {
+  width: 30px;
+  color: #43CC6D;
+  font-size: 0.8rem; }
+
+.status_line {
+  width: calc(100% - 50px);
+  color: #43CC6D;
+  font-size: 0.8rem; }
+
+.status_bar {
+  box-sizing: border-box;
+  margin-left: 20px;
+  width: 90%;
+  height: 3px;
+  background: #eee;
+  position: relative; }
+
+.status_complete {
+  background: #43CC6D;
+  height: 100%; }
 
 .prod_btn {
   margin-bottom: 20px; }
