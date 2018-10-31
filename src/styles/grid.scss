@@ -151,7 +151,7 @@ font-weight: 900;}
 .hello_anno{
     font-size: 0.8rem;
     line-height: 1.2rem;
-    margin:20px 0;
+    margin:40px 0;
     color:$gray;
     span{color:$blue; text-transform: uppercase; font-weight:900;}
 }
@@ -176,10 +176,11 @@ font-weight: 900;}
     position:relative;
 }
 
+
 .benf_hex{
     width:180px;
     height:180px;
-    background:#F5F6FE;
+    background:url('../../public/images/svg/benf_hex.svg') center center no-repeat;
     position:absolute;
     z-index:1;
     top:0;
@@ -361,24 +362,37 @@ width:calc(100% - 20px);
 height:100%;
 box-sizing: border-box;
 margin-left:20px;
-border-top:1px solid #eee;
-border-bottom:1px solid #eee;
+//border-top:1px solid #eee;
+//border-bottom:1px solid #eee;
 position:relative;
 //padding: 0 5px;
 //background:orange;
 }
 
 .pl_cont{
-    top:-40px;
-    height:415px;
+    top:0px;
+    height:345px;
     width:100%;
     position:absolute;
-    background:red;
+    //box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
+    //background:red;
+}
+
+.blur_pl_top{
+    width:100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+23,ffffff+100&1+0,1+23,0+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 23%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 23%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 23%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+height:50px;
+    position:absolute;
+    top:0px;
 }
 
 .list_video{
     font-size: 0;
-    margin-bottom:10px;
+    margin-bottom:21px;
 }
 
 .list_video:last-child{
@@ -387,7 +401,8 @@ position:relative;
 
 .thumb{width:120px;
 height:70px;
-background:$blue;
+background:url('https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg') center center no-repeat;
+background-size: cover;
 border-radius:6px;
 //box-shadow: 0px 0px 10px rgba(0,0,0,0.23);
 }
@@ -398,7 +413,7 @@ border-radius:6px;
     height:70px;
     font-size:10px;
     box-sizing:border-box;
-    padding:10px;
+    padding:0px 10px;
 }
 
 .vid_title{
@@ -443,7 +458,8 @@ border-radius:6px;
 
 
 .safe_smartest{
-    background:$blue;
+    background:$blue url('../../public/images/svg/ocamlbg.svg') right bottom no-repeat;
+    background-size: contain;
     padding:70px 0;
     color:#fff;
 }
@@ -483,12 +499,13 @@ line-height: 1.4rem;
 .allw{
     width:140px;
     height:140px;
-    background:#EFEFF7;
+    background:url('../../public/images/svg/ocalm_hex.svg') center center no-repeat;
     position:absolute;
     top:-8px;
     left:16px;
 }
 
+/*
 .allw2{
     width:120px;
     height:120px;
@@ -497,7 +514,7 @@ line-height: 1.4rem;
     top:2px;
     left:26px;
 }
-
+*/
 .why_num{
     font-size: 1.8rem;
     font-weight: 900;
@@ -644,7 +661,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 
 .devnetwork{
-    background:$blue;
+    background:$blue url('../../public/images/svg/selfdev.svg') left bottom no-repeat;
+    background-size:contain;
     padding:50px;
 }
 
@@ -672,13 +690,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 .all_prods{
     font-size: 0;
+    margin:50px 0;
 }
 .side_prods{
-    background: coral;
-    width:300px;
+    //background: coral;
+    width:260px;
     font-size: 10px;
     box-sizing: border-box;
     padding-left:100px;
+    ul{margin:0;padding:0;
+        li{
+            list-style: none;
+            margin-bottom:20px;
+        } 
+        li:last-child{
+            margin-bottom: 0;
+        }   
+    }
+}
+.prod_icon{
+    width:32px;
+    height:32px;
+    margin-right:10px;
+}
+
+.prod_desc{
+    color:$blue;
+    font-size: 0.7rem;
+    font-weight: 400;
 }
 
 .prod_pic{
@@ -694,7 +733,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .prod_cont{
     //background:pink;
-    width:calc(100% - 300px);
+    width:calc(100% - 450px);
     font-size: 10px;
     box-sizing: border-box;
     padding-left: 50px;
@@ -704,14 +743,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .prod_cont_box{
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 40px #DCDCF4;
     box-sizing: border-box;
     padding:30px;
 }
 
 .prod_text{
-    background:orange;
-    height:240px;
+    color:$blue;
+    height:200px;
+    font-size: 0.75rem;
+    line-height:1.2rem;
     margin-top:20px;
     width:70%;
 }
@@ -912,7 +953,7 @@ background:$blue;
 }
 
 .partner_pic{
-    background: $blue;
+    background: url('../../public/images/svg/partner.svg') center center no-repeat;
     width:100px;
     height: 100px;
     margin:0 auto 20px;
