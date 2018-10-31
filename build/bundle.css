@@ -705,7 +705,8 @@ body, html {
   padding-left: 30px; }
 
 .products {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background: #f8f8f8; }
 
 .all_prods {
   font-size: 0;
@@ -849,7 +850,7 @@ body, html {
   width: 80%; }
 
 .char_pic {
-  background: url("https://upload.wikimedia.org/wikipedia/commons/9/95/Don_Thompson%2CCEO_and_President_of_Mcdonalds.jpg") center center no-repeat;
+  background: url("https://breasiaproductions.com/wp-content/uploads/2015/08/imageplaceholder_02-736x736.jpg") center center no-repeat;
   background-size: cover;
   border-radius: 6px;
   position: relative;
@@ -935,7 +936,8 @@ body, html {
   width: 80%; }
 
 .new_pic {
-  background: #3737DE;
+  background: url("https://designshack.net/wp-content/uploads/placeholder-image.png") center center no-repeat;
+  background-size: cover;
   height: 150px;
   border-radius: 5px; }
 
@@ -947,7 +949,7 @@ body, html {
   font-weight: 700; }
 
 .new_anno {
-  color: #C1C1C1;
+  color: rgba(0, 0, 0, 0.4);
   font-size: 13px; }
 
 .news_more {

@@ -688,6 +688,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .products{
     padding:50px 0;
+    background:#f8f8f8;
 }
 .all_prods{
     font-size: 0;
@@ -863,7 +864,7 @@ background:$blue;
     //height:500px;
 }
 .char_pic{
-    background:url('https://upload.wikimedia.org/wikipedia/commons/9/95/Don_Thompson%2CCEO_and_President_of_Mcdonalds.jpg') center center no-repeat;
+    background:url('https://breasiaproductions.com/wp-content/uploads/2015/08/imageplaceholder_02-736x736.jpg') center center no-repeat;
     background-size:cover;
     border-radius: 6px;
     position:relative;
@@ -958,7 +959,8 @@ background:$blue;
 }
 
 .new_pic{
-    background:$blue;
+    background: url('https://designshack.net/wp-content/uploads/placeholder-image.png') center center no-repeat;
+    background-size: cover;
     height: 150px;
     border-radius: 5px;
 }
@@ -972,7 +974,7 @@ background:$blue;
     font-weight:700;
 }
 .new_anno{
-    color:#C1C1C1;
+    color:rgba(0,0,0,0.4);
     font-size:13px;
 }
 
