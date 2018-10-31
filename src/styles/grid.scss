@@ -13,9 +13,10 @@ body,html{
     width:100%;
     height:100%;
     font-family:'Lato';
-    color:$blue;
+    //background:#F8F8F8;
     position: relative;
     color:#000;
+    
     
 }
 
@@ -23,8 +24,9 @@ body,html{
     position:relative;
     width:100%;
     height: 100%;
-    background: red;
+    //background: red;
 }
+
 
 
 .sidesocials{
@@ -35,7 +37,7 @@ body,html{
     right:0px;
     top:100px;
     ul{
-        padding: 40px 0;
+        padding: 30px 0;
         margin:0;
         li{
             list-style-type: none;
@@ -43,8 +45,8 @@ body,html{
                 display:block;
                 width:20px;
                 height:20px;
-                background:green;
-                margin:10px 20px;
+                //background:green;
+                margin:10px 16px;
             }
         }
     }
@@ -53,7 +55,7 @@ body,html{
     position:absolute;
     width:100%;
     z-index: 100;
-    background: coral;
+    //background: coral;
     font-size:0;
 }
 
@@ -65,12 +67,12 @@ body,html{
     width:calc(100% - #{$logowidth});
     box-sizing: border-box;
     padding:20px 0 20px 0;
-    background: green;
+    //background: green;
 }
 .nav{
     font-size: 10px;
     width:$navwidth;
-    background:navy;
+    //background:navy;
     text-align:center;
     ul{
         margin:0;
@@ -78,7 +80,7 @@ body,html{
         li{
             display:inline;
             margin-left:8%;
-            background:orange;
+            //background:orange;
         } 
         li:first-child{
             margin-left: 0;
@@ -98,25 +100,61 @@ body,html{
 
 
 .inner{
-    width:900px;
+    width:1000px;
     margin:0 auto;
+    position:relative;
+    
 }
 
+.inner_hello{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+}
 
 
 .hello{
     width:100%;
     height:100%;
     position: relative;
-    //background:url('../../public/hs.png') center center no-repeat;
-    background-size: contain;
+    background: #fff url('../../public/images/svg/hellobg.svg') center center no-repeat;
+    background-size: cover;
 }
 
+.hello_box{
+    width:50%;
+    margin-left:40%;
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  h1{margin:0; padding:0;
+font-size:3rem;
+line-height: 3.5rem;
+font-weight: 900;}
+    h1:before{
+        width:0px;
+    margin-right: 0px;
+    }
+}
+
+.hello_anno{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin:20px 0;
+    color:$gray;
+    span{color:$blue; text-transform: uppercase; font-weight:900;}
+}
+
+
+.benefits{
+    padding:60px 0;
+}
  
 .all_benefits{
     font-size: 0;
-    margin: 50px 0;
-    background:red;
+    margin: 0px 0;
+    //background:red;
 }
 
 .benf_block{
@@ -131,7 +169,7 @@ body,html{
 .benf_hex{
     width:180px;
     height:180px;
-    background:fuchsia;
+    background:#F5F6FE;
     position:absolute;
     z-index:1;
     top:0;
@@ -148,14 +186,21 @@ body,html{
 }
 
 .benf_icon{
-    width:80px;
-    height:80px;
-    background:rgba(255,0,0,0.3);
+    width:60px;
+    height:60px;
+    //background:rgba(255,0,0,0.3);
 }
 
 .benf_title{
     text-transform:uppercase;
+    font-size: 0.8rem;
+    font-weight: 900;
     margin:10px 0;
+}
+
+.benf_text{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
 }
 
 
@@ -166,7 +211,7 @@ body,html{
 
 .tabs_block{
     width:100%;
-    margin:20px auto;
+    margin:50px auto;
     box-shadow:0px 20px 30px rgba(0,0,0,0.23);
     border-radius: 10px;
 }
@@ -189,7 +234,7 @@ body,html{
     span{
         text-transform:uppercase;
         font-size: 0.8rem;
-        font-weight: 700;
+        font-weight: 900;
         color:#000;
     }
 }
@@ -197,9 +242,9 @@ body,html{
 .tab_icon{
     width:36px;
     height:36px;
-    background:red;
+    //background:red;
     display:inline-block;
-    margin-right:10px;
+    margin-right:4px;
 }
 
 .active_tab{
@@ -229,11 +274,15 @@ body,html{
     box-sizing: border-box;
     width:100%;
     height:100%;
-    padding:50px 50px;
+    padding:70px 50px;
 }
 
 .data_left{
     width:45%;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    box-sizing: border-box;
+    padding-right:50px;
 }
 
 .data_right{
@@ -245,6 +294,12 @@ body,html{
     padding:50px 0;
 }
 
+.scheme{
+    width:80%;
+    margin:0 auto;
+    padding:70px 0;
+}
+
 .video{
     padding:50px 0;
     //background: coral;
@@ -254,12 +309,14 @@ body,html{
     font-size: 0;
     height: auto;
     position:relative;
+    margin:100px 0 100px 0;
+    //background:olive;
 }
 
 .screen{
     width:60%;
     background:#000;
-    height:100%;
+    height:auto;
     font-size: 10px;
     box-sizing:border-box;
     border-radius: 10px;
@@ -270,7 +327,7 @@ body,html{
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	//padding-top: 25px;
 	height: 0;
 }
 .videoWrapper iframe {
@@ -283,8 +340,9 @@ body,html{
 
 .playlist{
     width:40%;
-    height:335px;
+    height:345px;
 font-size: 10px;
+
 }
 
 .all_list{
@@ -293,8 +351,19 @@ width:calc(100% - 20px);
 height:100%;
 box-sizing: border-box;
 margin-left:20px;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
+position:relative;
 //padding: 0 5px;
 //background:orange;
+}
+
+.pl_cont{
+    top:-40px;
+    height:415px;
+    width:100%;
+    position:absolute;
+    background:red;
 }
 
 .list_video{
@@ -303,7 +372,7 @@ margin-left:20px;
 }
 
 .list_video:last-child{
-    margin-bottom:0;
+    margin-bottom:0px;
 }
 
 .thumb{width:120px;
@@ -365,12 +434,16 @@ border-radius:6px;
 
 .safe_smartest{
     background:$blue;
-    padding:60px 0;
+    padding:70px 0;
     color:#fff;
 }
 
-.half_text{
-    width:50%;
+
+
+.smart_contr_text{
+width:50%;
+font-size: 0.9rem;
+line-height: 1.4rem;
 }
 
 .ss_btns{
@@ -381,50 +454,58 @@ border-radius:6px;
 
 
 .using_ocalm{
-    padding:40px 0;
+    padding:100px 0 0px 0;
+    background:#F8F8F8;
 }
 .all_whys{
     font-size: 0;
+    margin:60px 0 0 0;
 }
 
 
 .one_why{
     box-sizing: border-box;
-    padding: 45px 20px 0 50px;
+    padding: 45px 20px 0 70px;
     position:relative;
-    margin:0 0 40px 0;
+    margin:0 0 80px 0;
 }
 
 .allw{
-    width:130px;
-    height:130px;
+    width:140px;
+    height:140px;
     background:#EFEFF7;
     position:absolute;
-    top:0;
-    left:0;
+    top:-8px;
+    left:16px;
 }
 
 .allw2{
-    width:114px;
-    height:114px;
-    background:#fff;
+    width:120px;
+    height:120px;
+    background:#F8F8F8;
     position:absolute;
-    top:8px;
-    left:8px;
+    top:2px;
+    left:26px;
 }
 
 .why_num{
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 900;
+    color:$blue;
+    padding-top:0.4rem;
 }
 
 .why_text{
     position: relative;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
     z-index:3;
+    box-sizing: border-box;
+    padding-right:30px;
 }
 
 .why_title{
-    font-size:15px;
+    font-size:0.9rem;
     text-transform: uppercase;
     font-weight: 900;
     margin-top:9px;
@@ -445,13 +526,19 @@ border-radius:6px;
     width:100%;
 }
 
+
+.fastest{
+    padding:50px 0;
+    background:#F8F8F8;
+}
 .inner_glow{
     width:70%;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 100px rgba(0,0,0,0.7);
+    box-shadow: 0 0 100px #E2E2EF;
     margin: 0 auto 100px auto;
     padding:50px;
+    background:#F8F8F8;
 }
 
 .stats{
@@ -461,6 +548,7 @@ border-radius:6px;
     box-sizing: border-box;
     padding-left: 90px;
     font-size: 0;
+    margin:100px 0;
 }
 
 
@@ -469,7 +557,7 @@ border-radius:6px;
     z-index: 2;
     width:150px;
     height: 100%;
-    background: linear-gradient(to right, transparent, #fff);
+    background: linear-gradient(to right, transparent, #F8F8F8);
     right:0;
     top:0;
 }
@@ -479,13 +567,14 @@ border-radius:6px;
 }
 
 .stat_logo{
-    width:130px;
+    width:50px;
     height:50px;
-    background:red;
+    //background:red;
 }
 
 .stat_graphs{
- width:calc(100% - 130px);
+    margin-left:20px;
+ width:calc(100% - 70px);
 }
 
 .one_graph{
@@ -496,6 +585,7 @@ border-radius:6px;
     font-size: 12px;
     width:50px;
     text-align: right;
+    span{font-size: 1rem; font-weight: 900;}
 }
 .graph_line{
     height:16px;
@@ -519,11 +609,15 @@ border-radius:6px;
 
 .stats_legend{
     text-align: right;
+    color:$blue;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.6rem;
 }
 
 .leg_icon{
-    width:20px;
-    height:20px;
+    width:14px;
+    height:14px;
     border-radius:1000px;
 }
 
@@ -535,6 +629,25 @@ border-radius:6px;
 .devnetwork{
     background:$blue;
     padding:50px;
+}
+
+.all_dev{
+    font-size:0;
+}
+.dev_pic{
+    margin-left:75px;
+    width:35%;
+    //background:red;
+    font-size: 10px;
+}
+.dev_text{
+    width:50%;
+    font-size:0.9rem;
+    line-height: 1.4rem;
+    color:#fff;
+    padding-top:40px;
+    box-sizing: border-box;
+    padding-left:30px;
 }
 
 .products{
@@ -599,10 +712,13 @@ margin-bottom:20px;
 
 .docs{
     padding:50px 0;
+    background:#F8F8F8;
 }
 
 .all_docs{
     font-size: 0;
+    margin:30px auto;
+    width:80%;
 }
 
 .one_doc{
@@ -610,6 +726,21 @@ margin-bottom:20px;
     text-align: center;
     box-sizing: border-box;
     padding: 10px 30px;
+    a{
+        color:#000;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+.doc_icon{
+    background:url('../../public/images/svg/doc.svg') center center no-repeat;
+    background-size: contain;
+    width:140px;
+    height:140px;
+    margin:0 auto;
 }
 
 
@@ -621,20 +752,21 @@ background:$blue;
 
 .all_team{
     font-size: 0;
-    margin:0 auto;
+    margin:40px auto 0 auto;
     width:90%;
 }
 
 
 .one_char{
     box-sizing: border-box;
-    margin:0 auto 30px 0;
+    margin:0 auto 40px 0;
     width:80%;
     //background:red;
-    height:300px;
+    //height:500px;
 }
 .char_pic{
-    background:orange;
+    background:url('https://upload.wikimedia.org/wikipedia/commons/9/95/Don_Thompson%2CCEO_and_President_of_Mcdonalds.jpg') center center no-repeat;
+    background-size:cover;
     border-radius: 6px;
     position:relative;
     z-index: 1;
@@ -650,6 +782,42 @@ background:$blue;
     z-index:2;
     bottom:-4px;
     border-radius: 0 0 6px 6px;
+    font-size: 0;
+}
+
+.conts{width:calc(100% - 20px);}
+
+.char_icon{
+    width:16px;
+    height:16px;
+    margin-right:10px;
+}
+
+.info_icon{
+    width:16px;
+    height:16px;
+    background: url('../../public/images/svg/team/t_info.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.ca{
+    background: url('../../public/images/svg/team/t_gl.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.cb{
+    background: url('../../public/images/svg/team/t_in.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.cc{
+    background: url('../../public/images/svg/team/t_fb.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.cd{
+    background: url('../../public/images/svg/team/t_inst.svg') center center no-repeat;
+    background-size: contain;
 }
 
 .char_name{
@@ -659,10 +827,11 @@ background:$blue;
 
 .c_name{
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.9rem;
+    font-weight: 900;
 }
 
-.c_pos{font-size: 13px; margin-top:5px;}
+.c_pos{font-size: 0.8rem; font-weight: 700; margin-top:5px; text-transform: uppercase;}
 
 
 .roadmap{
@@ -676,12 +845,13 @@ background:$blue;
 }
 
 .news{
-    padding:50px 0;
+    padding:50px 0 100px 0;
+    background:#F8F8F8;
 }
 
 .all_news{
     font-size: 0;
-    margin-bottom:50px;
+    margin:50px 0 30px 0 ;
 }
 
 .one_new{
@@ -720,6 +890,7 @@ background:$blue;
 
 .all_partners{
     font-size: 0;
+    margin: 60px 0;
 }
 
 .partner_pic{
@@ -737,11 +908,14 @@ background:$blue;
 
 .events{
     padding:50px 0px;
+    background:#F8F8F8;
 }
 
 .footer{
     padding:50px 0;
-    background:$dark;
+    min-height: 300px;
+    background:$dark url('../../public/images/svg/footer_bg.svg') center center no-repeat;
+    background-size: contain;
     color:#fff;
 }
 
