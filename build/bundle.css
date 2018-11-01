@@ -19,7 +19,7 @@ h1:before {
   padding: 2px 0;
   width: 70px;
   margin-bottom: 0.4rem;
-  background: #3737DE;
+  background: #273be2;
   margin-right: 20px; }
 
 h1 span {
@@ -37,7 +37,7 @@ h2 {
   background: #fff !important; }
 
 .hexshadow {
-  filter: drop-shadow(0px 0px 25px #3737DE); }
+  filter: drop-shadow(0px 0px 25px #273be2); }
 
 .hexagon {
   -webkit-clip-path: url("#myClip");
@@ -86,11 +86,11 @@ h2 {
   border-radius: 3px;
   font-size: 0.7rem;
   padding: 5px 20px;
-  background: #3737DE;
+  background: #273be2;
   font-weight: 900;
   display: inline-block;
   box-shadow: 0px 0px 20px #A4A5E9;
-  border: 2px solid #3737DE; }
+  border: 2px solid #273be2; }
   .solid_b_btn_icon div {
     display: inline-block;
     vertical-align: middle; }
@@ -101,15 +101,15 @@ h2 {
   border-radius: 3px;
   font-size: 0.7rem;
   padding: 10px 20px;
-  background: #3737DE;
+  background: #273be2;
   font-weight: 900;
   display: inline-block;
   box-shadow: 0px 0px 20px #A4A5E9;
-  border: 2px solid #3737DE; }
+  border: 2px solid #273be2; }
 
 .solid_w_btn {
   text-transform: uppercase;
-  color: #3737DE;
+  color: #273be2;
   border-radius: 3px;
   font-size: 0.8rem;
   font-weight: 900;
@@ -195,7 +195,9 @@ body, html {
         margin: 10px 16px; }
 
 .top_menu {
-  position: absolute;
+  position: fixed;
+  background: #fff;
+  z-index: 100;
   width: 100%;
   z-index: 100;
   font-size: 0; }
@@ -236,6 +238,9 @@ body, html {
   font-size: 10px;
   width: 20%;
   text-align: right; }
+  .auth a {
+    color: #fff;
+    text-decoration: none; }
 
 .inner {
   width: 1000px;
@@ -248,12 +253,14 @@ body, html {
   margin: 0 auto;
   position: relative; }
 
+.inner_hello {
+  background: #fff url(public/images/svg/hellobg.svg) center center no-repeat;
+  background-size: cover; }
+
 .hello {
   width: 100%;
   height: 100%;
-  position: relative;
-  background: #fff url(public/images/svg/hellobg.svg) center center no-repeat;
-  background-size: cover; }
+  position: relative; }
 
 .hello_box {
   width: 50%;
@@ -275,12 +282,12 @@ body, html {
     margin-right: 0px; }
 
 .hello_anno {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   margin: 40px 0;
   color: #4C4C4C; }
   .hello_anno span {
-    color: #3737DE;
+    color: #273be2;
     text-transform: uppercase;
     font-weight: 900; }
 
@@ -329,7 +336,7 @@ body, html {
   line-height: 1.4rem; }
 
 .audience {
-  background: #3737DE url(public/images/svg/audbg.svg) right bottom no-repeat;
+  background: #273be2 url(public/images/svg/audbg.svg) right bottom no-repeat;
   background-size: contain;
   padding: 40px 0; }
 
@@ -474,7 +481,8 @@ body, html {
 
 .list_video {
   font-size: 0;
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  cursor: pointer; }
 
 .list_video:last-child {
   margin-bottom: 0px; }
@@ -527,7 +535,7 @@ body, html {
   background: #ddd; }
 
 .safe_smartest {
-  background: #3737DE url(public/images/svg/ocamlbg.svg) right bottom no-repeat;
+  background: #273be2 url(public/images/svg/ocamlbg.svg) right bottom no-repeat;
   background-size: contain;
   padding: 70px 0;
   color: #fff; }
@@ -575,7 +583,7 @@ body, html {
 .why_num {
   font-size: 1.8rem;
   font-weight: 900;
-  color: #3737DE;
+  color: #273be2;
   padding-top: 0.4rem; }
 
 .why_text {
@@ -682,7 +690,7 @@ body, html {
 
 .stats_legend {
   text-align: right;
-  color: #3737DE;
+  color: #273be2;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 0.6rem; }
@@ -697,7 +705,7 @@ body, html {
   margin-left: 30px; }
 
 .devnetwork {
-  background: #3737DE url(public/images/svg/selfdev.svg) left bottom no-repeat;
+  background: #273be2 url(public/images/svg/selfdev.svg) left bottom no-repeat;
   background-size: cover;
   padding: 50px; }
 
@@ -714,7 +722,6 @@ body, html {
   font-size: 0.9rem;
   line-height: 1.4rem;
   color: #fff;
-  padding-top: 40px;
   box-sizing: border-box;
   padding-left: 30px; }
 
@@ -747,7 +754,7 @@ body, html {
   margin-right: 10px; }
 
 .prod_desc {
-  color: #3737DE;
+  color: #273be2;
   font-size: 0.7rem;
   font-weight: 400; }
 
@@ -774,7 +781,7 @@ body, html {
   padding: 30px; }
 
 .prod_text {
-  color: #3737DE;
+  color: #273be2;
   height: 200px;
   font-size: 0.75rem;
   line-height: 1.2rem;
@@ -796,7 +803,7 @@ body, html {
   font-size: 0; }
 
 .status_title {
-  color: #3737DE;
+  color: #273be2;
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 700;
@@ -857,8 +864,8 @@ body, html {
   margin: 0 auto; }
 
 .team {
-  padding: 80px 0;
-  background: #3737DE; }
+  padding: 40px 0;
+  background: #273be2; }
 
 .all_team {
   font-size: 0;
@@ -883,7 +890,7 @@ body, html {
   box-sizing: border-box;
   padding: 15px 10px;
   width: 100%;
-  background: #3737DE;
+  background: #273be2;
   position: absolute;
   z-index: 2;
   bottom: -4px;
@@ -979,7 +986,7 @@ body, html {
 .r_tab_active {
   font-weight: 900;
   font-size: 1rem;
-  color: #3737DE; }
+  color: #273be2; }
 
 .r_main {
   width: 100%;
@@ -1036,7 +1043,7 @@ body, html {
 
 .active_yt {
   font-weight: 900;
-  color: #3737DE; }
+  color: #273be2; }
 
 .news {
   padding: 50px 0 100px 0;
@@ -1051,10 +1058,20 @@ body, html {
   width: 80%; }
 
 .new_pic {
-  background: url("https://designshack.net/wp-content/uploads/placeholder-image.png") center center no-repeat;
-  background-size: cover;
   height: 150px;
   border-radius: 5px; }
+
+.p1 {
+  background: url(public/images/events/03-republia-conf-post.jpg) center center no-repeat;
+  background-size: cover; }
+
+.p2 {
+  background: url(public/images/events/04-republia-conf-post.jpg) center center no-repeat;
+  background-size: cover; }
+
+.p3 {
+  background: url(public/images/events/05-republia-conf-post.jpg) center center no-repeat;
+  background-size: cover; }
 
 .new_text {
   margin: 10px 0 30px 0; }
@@ -1064,8 +1081,9 @@ body, html {
   font-weight: 700; }
 
 .new_anno {
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 13px; }
+  color: coral;
+  font-size: 14px;
+  margin-top: 2px; }
 
 .news_more {
   margin: 0px auto 0px auto;

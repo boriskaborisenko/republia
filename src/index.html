@@ -22,15 +22,15 @@
         <div class="top_bar inl_m">
           <div class="nav inl_m">
             <ul>
-              <li><a href="#">Our Products</a></li>
-              <li><a href="#">Documents</a></li>
-              <li><a href="#">Roadmap</a></li>
-              <li><a href="#">Team</a></li>
+              <li id="toProds"><a href="javascript:void(0)">Our Products</a></li>
+              <li id="toDocs"><a href="javascript:void(0)">Documents</a></li>
+              <!--<li><a href="#">Roadmap</a></li>-->
+              <li id="toTeam"><a href="javascript:void(0)">Team</a></li>
             </ul>
           </div>
           <div class="lang inl_m"></div>
           <div class="auth inl_m">
-            <div class="solid_b_btn">GET REPUBLIA ID</div>
+            <div class="solid_b_btn"><a target="_blank" href="https://republia.io/mvp?#/">GET REPUBLIA ID</a></div>
             <!--
             <a href="#">Sign In</a> | 
             <a href="#">Sign Up</a>
@@ -42,13 +42,13 @@
 
     <div class="sidesocials">
       <ul>
-        <li><a href="#"><img src="../public/images/svg/soc_side/gth.svg" alt=""></a></li>
-        <li><a href="#"><img src="../public/images/svg/soc_side/fb.svg" alt=""></a></li>
-        <li><a href="#"><img src="../public/images/svg/soc_side/ytb.svg" alt=""></a></li>
-        <li><a href="#"><img src="../public/images/svg/soc_side/m.svg" alt=""></a></li>
-        <li><a href="#"><img src="../public/images/svg/soc_side/tw.svg" alt=""></a></li>
-        <li><a href="#"><img src="../public/images/svg/soc_side/tg.svg" alt=""></a></li>
-        <li><a href="#"><img src="../public/images/svg/soc_side/btc.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://github.com/republia"><img src="../public/images/svg/soc_side/gth.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/republia.group/"><img src="../public/images/svg/soc_side/fb.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://www.youtube.com/channel/UCG3GhBOmWfbfhlgjRcPAIqg"><img src="../public/images/svg/soc_side/ytb.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://medium.com/@republia"><img src="../public/images/svg/soc_side/m.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://twitter.com/Republia_Group"><img src="../public/images/svg/soc_side/tw.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://t.me/joinchat/GYZTvxF7hZ8BfRhyVSHY-A"><img src="../public/images/svg/soc_side/tg.svg" alt=""></a></li>
+        <li><a target="_blank" href="https://bitcointalk.org/index.php?topic=4841968.20"><img src="../public/images/svg/soc_side/btc.svg" alt=""></a></li>
       </ul>
     </div>
     
@@ -58,10 +58,10 @@
           <div class="hello_text">
             <h1>Republia — <t id="fsc">fastest</t><!--/safest/scalability--><br>blockchain<br>in the world</h1>
             <div class="hello_anno">
-                <span>REPUBLIA</span> is a new level of security and transparency.<br> Try it now
+                <span>REPUBLIA</span> is a new level of security and transparency. Try it now
             </div>
             <div class="hello_btn">
-              <div class="solid_b_btn_icon"><img src="../public/images/svg/play.svg" alt="" class="btn_icon"><div>Watch video</div></div>
+              <div class="solid_b_btn_icon" id="toVideo" style="cursor: pointer;"><img src="../public/images/svg/play.svg" alt="" class="btn_icon"><div>Watch video</div></div>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
     <section class="next_integr">
       <div class="inner">
           <div class="title">
-              <h1>Next Integration Blockchain</h1>
+              <h1>Next Generation Blockchain</h1>
           </div>
           <div class="scheme">
             <img src="../public/images/svg/scheme.svg" alt="">
@@ -154,7 +154,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
       </div>
     </section>
 
-    <section class="video">
+    <section class="video" id="goVideo">
         <div class="inner">
             <div class="title">
                 <h1>Video</h1>
@@ -190,10 +190,10 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
             <div class="smart_contr_text">
                 Republia Virtual Machine is implemented using functional programming language Michelson, which supports formal code verification that allows verifying smart contract before it is launched on the network. Thus, due to formal code verification, Republia VM will not execute smart contract in case an error occurs. Moreover, smart contracts created on Republia Smart Contract Platform are Turing complete, which ensures their correctness, because Turing completeness avoids fraud and delays in smart contracts. The smart contract, created on Republia platform, will never get caught in an endless loop, because it operates under the principle of a timestamp, which ensures execution of a digital contract.
             </div>
-            <div class="ss_btns">
+            <!--<div class="ss_btns">
               <div class="solid_w_btn">Watch</div>
               <div class="trans_w_btn">read more</div>
-            </div>
+            </div>-->
         </div>
     </section>
 
@@ -201,7 +201,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
     <section class="using_ocalm">
       <div class="inner">
           <div class="title">
-              <h1>Why we are using Ocalm</h1>
+              <h1>Why we are using OCalm</h1>
           </div>
           <div class="all_whys">
             <div class="one_why one_of_2 inl_t">
@@ -210,7 +210,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                 <div class="why_a inl_t why_num">01</div>
                 <div class="why_b inl_t">
                   <div class="why_title">Use in aviation</div>
-                  <div class="why_anno">Used in aircraft control software for the family of Airbus A340, where it indicates an absence of run-time errors.</div>
+                  <div class="why_anno">Applied in areas where the price of error is unbelievably high. Facebook, Bloomberg are some from the long list who using OCaml.</div>
                 </div>
               </div>
             </div>
@@ -351,18 +351,19 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
               <h1>Self developing<br><span>network</span></h1>
             </div>
             <div class="all_dev">  
-              <div class="dev_pic inl_t"><img src="../public/images/svg/xxx.svg" alt=""></div>
-              <div class="dev_text inl_t">
-                  Republia Ecosystem introduces an improved voting system, with the help of which all changes are implemented through consensus, which entails an automated update of the protocol among users. Thus, Republia Blockchain avoids hard forks. Moreover, Republia Blockchain protocol is divided into three layers (network layer, consensus layer, transaction layer) and layer separation allows to change protocol without hard forks. <div class="ss_btns">
+              <div class="dev_pic inl_m"><img src="../public/images/svg/xxx.svg" alt=""></div>
+              <div class="dev_text inl_m">
+                  Republia Ecosystem introduces an improved voting system, with the help of which all changes are implemented through consensus, which entails an automated update of the protocol among users. Thus, Republia Blockchain avoids hard forks. Moreover, Republia Blockchain protocol is divided into three layers (network layer, consensus layer, transaction layer) and layer separation allows to change protocol without hard forks. 
+                  <!--<div class="ss_btns">
                       <div class="solid_w_btn">Watch</div>
                       <div class="trans_w_btn">read more</div>
-                  </div>  
+                  </div>  -->
               </div>
             </div>
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="goProds">
       <div class="inner">
           <div class="title">
               <h1>Republia products</h1>
@@ -371,7 +372,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
             <div class="side_prods inl_m">
               <ul>
                 <li>
-                  <div class="one_prod active_prod" id="prod_1">
+                  <div class="one_prod" id="prod_1">
                     <div class="prod_icon inl_m"><img src="../public/images/svg/prods/pr_1.svg" alt=""></div>
                     <div class="prod_desc inl_m">REPUBLIA<br>BANK</div>
                   </div>
@@ -383,7 +384,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                     </div>
                 </li>
                 <li>
-                    <div class="one_prod" id="prod_3">
+                    <div class="one_prod active_prod" id="prod_3">
                       <div class="prod_icon inl_m"><img src="../public/images/svg/prods/pr_3.svg" alt=""></div>
                       <div class="prod_desc inl_m">REPUBLIA<br>ID</div>
                     </div>
@@ -426,8 +427,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
               <div class="prod_cont_box" id="prodbox">
                 <div class="prod_pic"><img src="../public/images/svg/mobile.png" alt="" class="fluidpic"></div>
                 <div class="prod_text" id="prodtext">
-                    RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security. Republia ID allows community members to influence the life of the ecosystem directly and ensures security through implementation into all parts of the global ecosystem. Identity Card that minimizes the risk of loss of funds or hacking user accounts.
-                </div>
+                    RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security. Republia ID allows community members to influence the life of the ecosystem directly and ensures security through implementation into all parts of the global ecosystem. Identity Card that minimizes the risk of loss of funds or hacking user accounts.</div>
                 <div class="prod_status">
                   <div class="status_block">
                       <div class="status_title">
@@ -450,7 +450,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                   
                 </div>
                 <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank"><div class="solid_b_btn">CHECK OUT MVP</div></a>
+                  <a href="https://republia.io/mvp?#/" target="_blank"><div class="solid_b_btn">Get free coin</div></a>
                 </div>
               </div>
             </div>
@@ -458,7 +458,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
       </div>
     </section>
 
-    <section class="docs">
+    <section class="docs" id="goDocs">
       <div class="inner">
           <div class="title">
               <h1>Documentations</h1>
@@ -520,6 +520,102 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
           
       </div>
     </section>
+
+    <section class="team" id="goTeam">
+      <div class="inner">
+          <div class="title white">
+              <h1>Advisors</h1>
+          </div>
+          <div class="all_team">
+            
+              <div class="one_of_3 inl_t">
+                  <div class="one_char">
+                    <div class="char_pic">
+                        <div class="char_info">
+                          <div class="conts inl_m">
+                            <a href="" target="_blank"><div class="char_icon ca inl_m"></div></a> <!--global-->
+                            <a href="https://www.linkedin.com/in/pavel-lerner-a159b5116/" target="_blank"><div class="char_icon cb inl_m">b</div></a><!--in-->
+                            <!--<a href="#" target="_blank"><div class="char_icon cc inl_m">c</div></a>--><!--fb-->
+                            <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
+                          </div>
+                          <div class="info_icon inl_m" style="opacity:0;">i</div>
+                        </div>
+                    </div>
+                    <div class="char_name">
+                        <div class="c_name">Pavlo Lerner</div>
+                        <div class="c_pos">CO-FOUNDER</div>
+                    </div>
+                  </div> 
+              </div>
+
+            <div class="lerner">
+                <span>«</span>For the first time, the blockchain technology has come close to becoming ubiquitous. The Republia protocol exceeds the speed of Ethereum by 25 times and, due to sidechains, has almost unlimited scalability and high security.<span>»</span>
+            </div>
+
+            <div class="one_of_3 inl_t">
+                <div class="one_char">
+                  <div class="char_pic">
+                      <div class="char_info">
+                        <div class="conts inl_m">
+                          <!--<a href="" target="_blank"><div class="char_icon ca inl_m"></div></a>--> <!--global-->
+                          <!--<a href="" target="_blank"><div class="char_icon cb inl_m">b</div></a>--><!--in-->
+                          <a href="https://www.facebook.com/BorisShulyaev" target="_blank"><div class="char_icon cc inl_m">c</div></a><!--fb-->
+                          <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
+                        </div>
+                        <!--<div class="info_icon inl_m">i</div>-->
+                      </div>
+                  </div>
+                  <div class="char_name">
+                      <div class="c_name">Boris SHULYAEV</div>
+                      <div class="c_pos">MinexCoin Founder and CEO</div>
+                  </div>
+                </div> 
+            </div>
+
+            <div class="one_of_3 inl_t">
+                <div class="one_char">
+                  <div class="char_pic">
+                      <div class="char_info">
+                        <div class="conts inl_m">
+                          <!--<a href="https://danielshulyaev.com/" target="_blank"><div class="char_icon ca inl_m"></div></a>--><!--global-->
+                          <a href="https://www.linkedin.com/in/yakovlevalex/" target="_blank"><div class="char_icon cb inl_m">b</div></a><!--in-->
+                          <a href="https://www.facebook.com/Yakovlev.Alexey" target="_blank"><div class="char_icon cc inl_m">c</div></a><!--fb-->
+                          <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
+                        </div>
+                        <!--<div class="info_icon inl_m">i</div>-->
+                      </div>
+                  </div>
+                  <div class="char_name">
+                      <div class="c_name">Oleksiy Yakovlev</div>
+                      <div class="c_pos">The head of the Innovative Projects Department at Moore Stephens.</div>
+                  </div>
+                </div> 
+            </div>
+
+            <div class="one_of_3 inl_t">
+                <div class="one_char">
+                  <div class="char_pic">
+                      <div class="char_info">
+                        <div class="conts inl_m">
+                          <a href="https://danielshulyaev.com/" target="_blank"><div class="char_icon ca inl_m"></div></a> <!--global-->
+                          <a href="https://www.linkedin.com/in/yunzhu-lin-frank-94001034/" target="_blank"><div class="char_icon cb inl_m">b</div></a><!--in-->
+                          <!--<a href="#" target="_blank"><div class="char_icon cc inl_m">c</div></a>--><!--fb-->
+                          <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
+                        </div>
+                        <!--<div class="info_icon inl_m">i</div>-->
+                      </div>
+                  </div>
+                  <div class="char_name">
+                      <div class="c_name">Yunzhu Lin</div>
+                      <div class="c_pos">7 Seas Capital<br>Founding Partner</div>
+                  </div>
+                </div> 
+            </div>
+
+          </div>
+      
+        </div>
+    </section>
   
     <section class="team">
         <div class="inner">
@@ -528,29 +624,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
             </div>
             <div class="all_team">
               
-              <div class="one_of_3 inl_t">
-                  <div class="one_char">
-                    <div class="char_pic">
-                        <div class="char_info">
-                          <div class="conts inl_m">
-                            <div class="char_icon ca inl_m">a</div>
-                            <div class="char_icon cb inl_m">b</div>
-                            <div class="char_icon cc inl_m">c</div>
-                            <div class="char_icon cd inl_m">d</div>
-                          </div>
-                          <div class="info_icon inl_m">i</div>
-                        </div>
-                    </div>
-                    <div class="char_name">
-                        <div class="c_name">DANIEL SHULYAEV</div>
-                        <div class="c_pos">CO-FOUNDER</div>
-                    </div>
-                  </div> 
-              </div>
-
-              <div class="lerner">
-                  <span>«</span>For the first time, the blockchain technology has come close to becoming ubiquitous. The Republia protocol exceeds the speed of Ethereum by 25 times and, due to sidechains, has almost unlimited scalability and high security.<span>»</span>
-              </div>
+              
 
               <div class="one_of_3 inl_t">
                   <div class="one_char">
@@ -682,7 +756,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                             <!--<a href="https://www.facebook.com/profile.php?id=100001552551211" target="_blank"><div class="char_icon cc inl_m">c</div></a>--><!--fb-->
                             <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
                           </div>
-                          <!--<div class="info_icon inl_m">i</div>-->
+                          <div class="info_icon inl_m" style="opacity:0;">i</div>
                         </div>
                     </div>
                     <div class="char_name">
@@ -742,7 +816,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                             <!--<a href="" target="_blank"><div class="char_icon cc inl_m">c</div></a>--><!--fb-->
                             <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
                           </div>
-                          <!--<div class="info_icon inl_m">i</div>-->
+                          <div class="info_icon inl_m" style="opacity:0;">i</div>
                         </div>
                     </div>
                     <div class="char_name">
@@ -762,7 +836,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                             <!--<a href="" target="_blank"><div class="char_icon cc inl_m">c</div></a>--><!--fb-->
                             <!--<a href="#" target="_blank"><div class="char_icon cd inl_m">d</div></a>--><!--insta-->
                           </div>
-                          <!--<div class="info_icon inl_m">i</div>-->
+                          <div class="info_icon inl_m" style="opacity:0;">i</div>
                         </div>
                     </div>
                     <div class="char_name">
@@ -803,7 +877,7 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
         </div>
     </section>
 
-    <section class="roadmap">
+    <section class="roadmap" style="display:none;">
       <div class="inner">
           <div class="title">
               <h1>Roadmap</h1>
@@ -837,66 +911,51 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
     <section class="news">
         <div class="inner">
             <div class="title">
-                <h1>News</h1>
+                <h1>Events</h1>
             </div> 
             <div class="all_news">
               
               <div class="one_of_3 inl_t">
                 <div class="one_new">
-                  <div class="new_pic"></div>
+                  <div class="new_pic p1"></div>
                   <div class="new_text">
-                    <div class="new_title">Title</div>
-                    <div class="new_anno">Anno</div>
+                    <div class="new_title">Blockchain Summit, Malta</div>
+                    <div class="new_anno">01 November</div>
                   </div>
                 </div>
               </div>
               <div class="one_of_3 inl_t">
                   <div class="one_new">
-                    <div class="new_pic"></div>
+                    <div class="new_pic p2"></div>
                     <div class="new_text">
-                      <div class="new_title">Event name</div>
-                      <div class="new_anno">Anno</div>
+                      <div class="new_title">Consensus Invest, New York</div>
+                      <div class="new_anno">27 November</div>
                     </div>
                   </div>
-                </div>
-                <div class="one_of_3 inl_t">
+              </div>
+              <div class="one_of_3 inl_t">
                     <div class="one_new">
-                      <div class="new_pic"></div>
+                      <div class="new_pic p3"></div>
                       <div class="new_text">
-                        <div class="new_title">Event name</div>
-                        <div class="new_anno">Anno</div>
+                        <div class="new_title">Blockshow, Singapore</div>
+                        <div class="new_anno">28 November</div>
                       </div>
                     </div>
-                </div>
-                <div class="one_of_3 inl_t">
-                    <div class="one_new">
-                      <div class="new_pic"></div>
-                      <div class="new_text">
-                        <div class="new_title">Event name</div>
-                        <div class="new_anno">Anno</div>
-                      </div>
-                    </div>
-                </div>
-                <div class="one_of_3 inl_t">
-                    <div class="one_new">
-                      <div class="new_pic"></div>
-                      <div class="new_text">
-                        <div class="new_title">Event name</div>
-                        <div class="new_anno">Anno</div>
-                      </div>
-                    </div>
-                </div>
+              </div>
+                
             
             </div>
+
+           
             
-            <div class="news_more">
+            <!--<div class="news_more">
                 <div class="solid_b_btn ma">Read more news</div>
-            </div>
+            </div>-->
             
         </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" style="display:none;">
         <div class="inner">
             <div class="title">
                 <h1>Partners</h1>
@@ -972,13 +1031,13 @@ Bringing so sociable felicity supplied mr. September suspicion far him two acute
                 <div class="f_title">SOCIAL NETWORKS</div>
                 <div class="all_f_soc">
                   <div class="f_soc_row">
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/g.svg" alt=""></div>
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/tg.svg" alt=""></div>
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/tw.svg" alt=""></div>
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/f.svg" alt=""></div>
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/y.svg" alt=""></div>
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/m.svg" alt=""></div>
-                    <div class="f_s inl_m"><img src="../public/images/svg/footer/soc/b.svg" alt=""></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://github.com/republia"><img src="../public/images/svg/footer/soc/g.svg" alt=""></a></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://t.me/joinchat/GYZTvxF7hZ8BfRhyVSHY-A"><img src="../public/images/svg/footer/soc/tg.svg" alt=""></a></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://twitter.com/Republia_Group"><img src="../public/images/svg/footer/soc/tw.svg" alt=""></a></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://www.facebook.com/republia.group/"><img src="../public/images/svg/footer/soc/f.svg" alt=""></a></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://www.youtube.com/channel/UCG3GhBOmWfbfhlgjRcPAIqg"><img src="../public/images/svg/footer/soc/y.svg" alt=""></a></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://medium.com/@republia"><img src="../public/images/svg/footer/soc/m.svg" alt=""></a></div>
+                    <div class="f_s inl_m"><a target="_blank" href="https://bitcointalk.org/index.php?topic=4841968.20"><img src="../public/images/svg/footer/soc/b.svg" alt=""></a></div>
                   </div>
                   
                 </div>

@@ -52,7 +52,9 @@ body,html{
     }
 }
 .top_menu{
-    position:absolute;
+    position:fixed;
+    background:#fff;
+    z-index:100;
     width:100%;
     z-index: 100;
     //background: coral;
@@ -104,6 +106,8 @@ body,html{
     font-size: 10px;
     width:$authwidth;
     text-align: right;
+    a{color:#fff;
+    text-decoration: none;}
 }
 
 
@@ -121,6 +125,12 @@ body,html{
     position:relative;
 }
 
+.inner_hello{
+    background: #fff url('../../public/images/svg/hellobg.svg') center center no-repeat;
+    background-size: cover;
+
+}
+
 
 
 
@@ -128,8 +138,6 @@ body,html{
     width:100%;
     height:100%;
     position: relative;
-    background: #fff url('../../public/images/svg/hellobg.svg') center center no-repeat;
-    background-size: cover;
 }
 
 .hello_box{
@@ -152,8 +160,8 @@ i{font-variant: normal;}
 }
 
 .hello_anno{
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     margin:40px 0;
     color:$gray;
     span{color:$blue; text-transform: uppercase; font-weight:900;}
@@ -397,6 +405,7 @@ height:50px;
 .list_video{
     font-size: 0;
     margin-bottom:21px;
+    cursor:pointer;
 }
 
 .list_video:last-child{
@@ -685,7 +694,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-size:0.9rem;
     line-height: 1.4rem;
     color:#fff;
-    padding-top:40px;
+    //padding-top:40px;
     box-sizing: border-box;
     padding-left:30px;
 }
@@ -855,9 +864,12 @@ margin-bottom:20px;
     margin:0 auto;
 }
 
+.adv{
+
+}
 
 .team{
-padding:80px 0;
+padding:40px 0;
 background:$blue;
 }
 
@@ -1086,10 +1098,23 @@ background:$blue;
 }
 
 .new_pic{
-    background: url('https://designshack.net/wp-content/uploads/placeholder-image.png') center center no-repeat;
-    background-size: cover;
     height: 150px;
     border-radius: 5px;
+}
+
+.p1{
+    background:url('../../public/images/events/03-republia-conf-post.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.p2{
+    background:url('../../public/images/events/04-republia-conf-post.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.p3{
+    background:url('../../public/images/events/05-republia-conf-post.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 .new_text{
@@ -1101,8 +1126,9 @@ background:$blue;
     font-weight:700;
 }
 .new_anno{
-    color:rgba(0,0,0,0.4);
-    font-size:13px;
+    color:coral;
+    font-size:14px;
+    margin-top:2px;
 }
 
 .news_more{
