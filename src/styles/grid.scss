@@ -126,8 +126,8 @@ body,html{
 }
 
 .inner_hello{
-    background: #fff url('../../public/images/svg/hellobg.svg') center center no-repeat;
-    background-size: cover;
+    background: #fff url('../../public/images/svg/hellobg.svg') left center no-repeat;
+    background-size: contain;
 
 }
 
