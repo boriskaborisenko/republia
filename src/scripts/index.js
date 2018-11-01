@@ -52,8 +52,15 @@ videos.map(item => {
 [].forEach.call(tabs, function(element){
     element.addEventListener('click',function(e){
           e.preventDefault();
+          var id= Number(element.id.slice(3, 4));
+          var tabcont = data.content[0].tabs[id-1].tab;
           
-          console.log('click tab');
+          _('tab_content').fade('out', 400);
+          setTimeout(()=>{
+            document.getElementById('tab_content').innerHTML = tabcont;
+          _('tab_content').fade('in', 400);   
+          },400);
+
           let active = document.querySelector('.active_tab');
           active.classList.remove('active_tab'); //remove class  
           this.classList.add('active_tab'); //add class to current click element
