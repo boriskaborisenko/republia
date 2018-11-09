@@ -80,6 +80,7 @@ function slide(elem) {
 
 document.querySelector('.mobburger').addEventListener('click', function (burger) {
   document.querySelector('.mobmenu_screen').classList.toggle('hide_nav');
+  document.querySelector('.mobburger').classList.toggle('burgclose');
 });
 
 
@@ -104,8 +105,11 @@ document.querySelector('.mobburger').addEventListener('click', function (burger)
     });
 
     slide(this.children[1]);
-    slide(this.children[1].children[0]);
-    slide(this.children[1].children[1]);
+    setTimeout(()=>{
+      slide(this.children[1].children[0]);
+      slide(this.children[1].children[1]);
+    },500);
+    
   });
 });
 

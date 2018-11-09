@@ -937,6 +937,8 @@ margin-bottom:20px;
 
 .docs{
     padding:50px 0;
+    position:relative;
+    z-index:10;
     background:#F8F8F8;
 }
 
@@ -1199,59 +1201,7 @@ background:$blue;
 
 }
 
-.news{
-    padding:50px 0 100px 0;
-    background:#F8F8F8;
-}
 
-.all_news{
-    font-size: 0;
-    margin:50px 0 30px 0 ;
-}
-
-.one_new{
-    box-sizing:border-box;
-    width:80%;
-}
-
-.new_pic{
-    height: 150px;
-    border-radius: 5px;
-}
-
-.p1{
-    background:url('../../public/images/events/03-republia-conf-post.jpg') center center no-repeat;
-    background-size: cover;
-}
-
-.p2{
-    background:url('../../public/images/events/04-republia-conf-post.jpg') center center no-repeat;
-    background-size: cover;
-}
-
-.p3{
-    background:url('../../public/images/events/05-republia-conf-post.jpg') center center no-repeat;
-    background-size: cover;
-}
-
-.new_text{
-    margin:10px 0 30px 0;
-}
-
-.new_title{
-    font-size: 14px;
-    font-weight:700;
-}
-.new_anno{
-    color:coral;
-    font-size:14px;
-    margin-top:2px;
-}
-
-.news_more{
-    margin:0px auto 0px auto;
-    text-align: center;
-}
 
 
 .partners{
@@ -1277,10 +1227,99 @@ background:$blue;
     font-weight: 700;
 }
 
+/*
 .events{
     padding:50px 0px;
     background:#F8F8F8;
 }
+*/
+.events {
+    padding: 0px 0 100px 0;
+    background: #F8F8F8;
+}
+
+.all_events {
+    font-size: 0;
+    margin: 50px 0 30px 0;
+}
+
+.one_event {
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.event_pic {
+    height: 150px;
+    border-radius: 5px;
+}
+
+.p1 {
+    background: url('../../public/images/events/03-republia-conf-post.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.p2 {
+    background: url('../../public/images/events/04-republia-conf-post.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.p3 {
+    background: url('../../public/images/events/05-republia-conf-post.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.event_text {
+    margin: 10px 0 30px 0;
+}
+
+.event_title {
+    //font-size: 14px;
+    //font-weight: 700;
+    margin-left:10px;
+}
+
+.event_anno {
+    color: coral;
+    font-size: 14px;
+    margin-top: 2px;
+    background:url('../../public/images/svg/datebg.svg') center center no-repeat;
+    background-size:contain;
+    width:60px;
+    height:60px;
+    text-align: center;
+}
+
+.event_name{
+color:$dark;
+font-size:1rem;
+}
+.event_place{
+color:$lightgray;
+font-size: 0.8rem;
+margin-top:3px;
+font-weight:900;
+}
+
+.event_day{
+    margin-top:15px;
+    font-size:0.8rem;
+    color:$orange;
+    font-weight: 900;
+}
+
+.event_month {
+    color: $lightgray;
+    font-size:0.8rem;
+    font-weight: 900;
+}
+
+.news_more {
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+
+
 
 .footer{
     //padding:50px 0;
