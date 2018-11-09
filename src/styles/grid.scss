@@ -47,7 +47,7 @@ body,html{
 
 .sidesocials{
     position:absolute;
-    z-index: 2;
+    z-index: 20;
     position:fixed;
     width:52px;
     height:280px;
@@ -103,7 +103,7 @@ body,html{
     //background: green;
 }
 .nav{
-    font-size: 10px;
+    //font-size: 10px;
     width:$navwidth;
     //background:navy;
     text-align:center;
@@ -118,7 +118,7 @@ body,html{
                 color:$black;
                 font-weight:700;
                 text-decoration: none;
-                font-size: 0.8rem;
+                font-size: 0.85rem;
             }
         } 
         li:first-child{
@@ -255,8 +255,8 @@ i{font-variant: normal;}
 }
 
 .hello_anno{
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     margin:40px 0;
     color:$gray;
     span{color:$blue; text-transform: uppercase; font-weight:900;}
@@ -310,14 +310,15 @@ i{font-variant: normal;}
 
 .benf_title{
     text-transform:uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height:1.5rem;
     font-weight: 900;
     margin:10px 0;
 }
 
 .benf_text{
-    font-size: 0.8rem;
-    line-height: 1.4rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
 
@@ -436,7 +437,7 @@ i{font-variant: normal;}
     font-size: 0;
     height: auto;
     position:relative;
-    margin:100px 0 100px 0;
+    margin:50px 0 70px 0;
     //background:olive;
 }
 
@@ -446,7 +447,7 @@ i{font-variant: normal;}
     height:auto;
     font-size: 10px;
     box-sizing:border-box;
-    border-radius: 10px;
+    border-radius: 6px;
     padding:8px;
     box-shadow:0px 0px 20px rgba(0,0,0,0.5);
 }
@@ -516,11 +517,11 @@ height:50px;
     margin-bottom:0px;
 }
 
-.thumb{width:120px;
+.thumb{width:118px;
 height:70px;
-background:url('https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg') center center no-repeat;
+background: red url('https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg') center center no-repeat;
 background-size: cover;
-border-radius:6px;
+border-radius:3px;
 //box-shadow: 0px 0px 10px rgba(0,0,0,0.23);
 }
 
@@ -642,7 +643,7 @@ line-height: 1.4rem;
 
 .why_text{
     position: relative;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.4rem;
     z-index:3;
     box-sizing: border-box;
@@ -836,8 +837,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .prod_desc{
     color:$blue;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 400;
+    zoom:100%;
 }
 
 .prod_pic{
@@ -870,18 +872,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .prod_text{
     color:$blue;
-    height:200px;
-    font-size: 0.75rem;
-    line-height:1.2rem;
+    height:220px;
+    font-size: 0.85rem;
+    line-height:1.35rem;
     margin-top:20px;
     width:65%;
 }
 
+
+.one_prod{
+   transition: all .3s ease;
+   zoom:100%;
+}
 .active_prod{
-    zoom:150%;
-    .prod_text{
-        font-weight: 900!important;
-    }
+    zoom:140%;
 }
 
 .prod_status{
@@ -908,12 +912,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 .status_perc{
     width:30px;
     color:$green;
-    font-size:0.8rem;
+    font-size:0.9rem;
 }
 .status_line{
     width:calc(100% - 50px);
     color:$green;
-    font-size:0.8rem;
+    font-size:0.9rem;
     text-transform: uppercase;
 }
 
@@ -956,7 +960,7 @@ margin-bottom:20px;
     a{
         color:#000;
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 900;
         text-transform: uppercase;
     }
@@ -1074,7 +1078,7 @@ background:$blue;
     font-weight: 900;
 }
 
-.c_pos{font-size: 0.8rem; font-weight: 700; margin-top:5px; text-transform: uppercase;}
+.c_pos{font-size: 0.7rem; font-weight: 700; margin-top:5px; text-transform: uppercase;}
 
 
 .roadmap{
@@ -1295,7 +1299,7 @@ font-size:1rem;
 }
 .event_place{
 color:$lightgray;
-font-size: 0.8rem;
+font-size: 0.9rem;
 margin-top:3px;
 font-weight:900;
 }

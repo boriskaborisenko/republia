@@ -1,6 +1,6 @@
 import '../styles/index.scss';
-import 'particles.js';
-import './particles-conf';
+//import 'particles.js';
+//import './particles-conf';
 import {data} from './data';
 
 

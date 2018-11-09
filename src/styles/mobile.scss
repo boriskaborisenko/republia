@@ -174,7 +174,7 @@
         height: 100%;
         position: relative;
         background: #fff url('../../public/images/svg/hellomobile.svg') left center no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     .hello_box {
@@ -320,6 +320,11 @@
         height:90px;
         top:-13px;
         left:0px;
+    }
+
+    .using_ocalm {
+        padding: 50px 0 0px 0;
+        background: #F8F8F8;
     }
 
     .one_why {

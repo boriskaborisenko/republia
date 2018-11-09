@@ -166,6 +166,15 @@ h2 {
   width: 100%;
   height: auto; }
 
+#fsc1 {
+  position: absolute; }
+
+#fsc2 {
+  position: absolute; }
+
+#fsc3 {
+  position: absolute; }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -200,7 +209,7 @@ body, html {
 
 .sidesocials {
   position: absolute;
-  z-index: 2;
+  z-index: 20;
   position: fixed;
   width: 52px;
   height: 280px;
@@ -248,7 +257,6 @@ body, html {
   padding: 20px 0 20px 0; }
 
 .nav {
-  font-size: 10px;
   width: 70%;
   text-align: center; }
   .nav ul {
@@ -261,7 +269,7 @@ body, html {
         color: #191919;
         font-weight: 700;
         text-decoration: none;
-        font-size: 0.8rem; }
+        font-size: 0.85rem; }
     .nav ul li:first-child {
       margin-left: 0; }
 
@@ -367,8 +375,8 @@ body, html {
     margin-right: 0px; }
 
 .hello_anno {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   margin: 40px 0;
   color: #4C4C4C; }
   .hello_anno span {
@@ -412,13 +420,14 @@ body, html {
 
 .benf_title {
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 900;
   margin: 10px 0; }
 
 .benf_text {
-  font-size: 0.8rem;
-  line-height: 1.4rem; }
+  font-size: 0.9rem;
+  line-height: 1.5rem; }
 
 .audience {
   background: #273be2 url(public/images/svg/audbg.svg) right bottom no-repeat;
@@ -513,7 +522,7 @@ body, html {
   font-size: 0;
   height: auto;
   position: relative;
-  margin: 100px 0 100px 0; }
+  margin: 50px 0 70px 0; }
 
 .screen {
   width: 60%;
@@ -521,7 +530,7 @@ body, html {
   height: auto;
   font-size: 10px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 8px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); }
 
@@ -581,11 +590,11 @@ body, html {
   margin-bottom: 0px; }
 
 .thumb {
-  width: 120px;
+  width: 118px;
   height: 70px;
-  background: url("https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg") center center no-repeat;
+  background: red url("https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg") center center no-repeat;
   background-size: cover;
-  border-radius: 6px; }
+  border-radius: 3px; }
 
 .vid_desc {
   width: calc(100% - 120px);
@@ -681,7 +690,7 @@ body, html {
 
 .why_text {
   position: relative;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.4rem;
   z-index: 3;
   box-sizing: border-box;
@@ -848,8 +857,9 @@ body, html {
 
 .prod_desc {
   color: #273be2;
-  font-size: 0.7rem;
-  font-weight: 400; }
+  font-size: 0.85rem;
+  font-weight: 400;
+  zoom: 100%; }
 
 .prod_pic {
   width: 260px;
@@ -875,16 +885,18 @@ body, html {
 
 .prod_text {
   color: #273be2;
-  height: 200px;
-  font-size: 0.75rem;
-  line-height: 1.2rem;
+  height: 220px;
+  font-size: 0.85rem;
+  line-height: 1.35rem;
   margin-top: 20px;
   width: 65%; }
 
+.one_prod {
+  transition: all .3s ease;
+  zoom: 100%; }
+
 .active_prod {
-  zoom: 150%; }
-  .active_prod .prod_text {
-    font-weight: 900 !important; }
+  zoom: 140%; }
 
 .prod_status {
   height: 100px;
@@ -905,12 +917,12 @@ body, html {
 .status_perc {
   width: 30px;
   color: #43CC6D;
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
 
 .status_line {
   width: calc(100% - 50px);
   color: #43CC6D;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: uppercase; }
 
 .status_bar {
@@ -947,7 +959,7 @@ body, html {
   .one_doc a {
     color: #000;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 900;
     text-transform: uppercase; }
 
@@ -1040,7 +1052,7 @@ body, html {
   font-weight: 900; }
 
 .c_pos {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   margin-top: 5px;
   text-transform: uppercase; }
@@ -1223,7 +1235,7 @@ body, html {
 
 .event_place {
   color: #AAAAAA;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: 3px;
   font-weight: 900; }
 
@@ -1475,7 +1487,7 @@ body, html {
     height: 100%;
     position: relative;
     background: #fff url(public/images/svg/hellomobile.svg) left center no-repeat;
-    background-size: contain; }
+    background-size: cover; }
   .hello_box {
     width: 100%;
     margin-left: 0%;
@@ -1572,6 +1584,9 @@ body, html {
     height: 90px;
     top: -13px;
     left: 0px; }
+  .using_ocalm {
+    padding: 50px 0 0px 0;
+    background: #F8F8F8; }
   .one_why {
     box-sizing: border-box;
     padding: 15px 0px 0 30px;
