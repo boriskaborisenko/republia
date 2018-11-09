@@ -1,5 +1,24 @@
 import '../styles/index.scss';
+import 'particles.js';
+import './particles-conf';
 import {data} from './data';
+
+
+
+window.onscroll = function() {glueMenu();};
+
+var header = document.getElementById("mainmenu");
+
+var sticky = header.offsetTop;
+//var sticky = 300;
+
+function glueMenu() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 //console.log(data.content);
 /*
@@ -25,8 +44,14 @@ function addText(text){
 }
 */
 
+
+
+
+
+
 var tabs = document.getElementsByClassName('tab_btn');
 var products = document.getElementsByClassName('one_prod'); 
+var mob_prods = document.getElementsByClassName('one_prod_mob');
 var videos = [
     {id:'6ZIMqjYIFw4', title:'What is Republia?', desc:'Welcome to #Republia community!'},
     {id:'FliKqP0JBfg', title:'Vladyslav Gyrych about Republia project', desc:'Many years of experience in the implementation...'},
@@ -48,6 +73,42 @@ videos.map(item => {
                         </div>
                       </div>`;
 });
+
+function slide(elem) {
+  elem.classList.toggle('hide');
+}
+
+document.querySelector('.mobburger').addEventListener('click', function (burger) {
+  document.querySelector('.mobmenu_screen').classList.toggle('hide_nav');
+});
+
+
+[].forEach.call(mob_prods, function (element) {
+  element.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+    
+    var divs = document.querySelectorAll('.hided_part');
+    [].forEach.call(divs, function (div) {
+      div.className = div.className+' hide';
+    });
+
+    var divsPic = document.querySelectorAll('.hided_pic');
+    [].forEach.call(divsPic, function (divPic) {
+      divPic.className = divPic.className + ' hide';
+    });
+
+    var divsText = document.querySelectorAll('.hided_text');
+    [].forEach.call(divsText, function (divText) {
+      divText.className = divText.className + ' hide';
+    });
+
+    slide(this.children[1]);
+    slide(this.children[1].children[0]);
+    slide(this.children[1].children[1]);
+  });
+});
+
 
 [].forEach.call(tabs, function(element){
     element.addEventListener('click',function(e){
