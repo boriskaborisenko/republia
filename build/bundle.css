@@ -1577,6 +1577,108 @@ body, html {
   .smart_contr_text {
     width: 80%;
     margin: 20px auto; }
+  .video {
+    padding: 0px 0 30px 0; }
+    .video .inner {
+      width: 100%; }
+  .videobox {
+    font-size: 0;
+    height: auto;
+    position: relative;
+    margin: 30px 0 40px 0; }
+  .screen {
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0; }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .playlist {
+    width: 100%;
+    height: 90px;
+    font-size: 10px; }
+  .all_list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-top: 20px;
+    position: relative; }
+  .pl_cont {
+    top: 0px;
+    height: 93px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    width: 100%;
+    position: relative;
+    background: #fafbfc;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+  .list_video {
+    font-size: 0;
+    margin-bottom: 0px;
+    cursor: pointer;
+    background: olive;
+    width: 110px;
+    margin-right: 20px;
+    display: inline-block; }
+  .list_video:last-child {
+    margin-right: 0; }
+  .scrollbox {
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap; }
+  .thumb {
+    display: block !important;
+    width: 110px;
+    height: 70px;
+    background: red url("https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg") center center no-repeat;
+    background-size: cover;
+    border-radius: 3px; }
+  .vid_desc {
+    width: calc(100% - 120px);
+    height: 70px;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding: 0px 0px;
+    display: none; }
+  .vid_title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px; }
+  .vid_anno {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.54); }
+  /* Scrollbar styles */
+  .scrollbox::-webkit-scrollbar {
+    width: 0px;
+    height: 0px; }
+  .scrollbox::-webkit-scrollbar-track {
+    border: 1px solid #fafbfc;
+    border-radius: 10px;
+    background: #fafbfc; }
+  .scrollbox::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px; }
+  .scrollbox::-webkit-scrollbar-thumb:hover {
+    background: #ddd; }
   .one_of_2 {
     width: 100%; }
   .allw {
