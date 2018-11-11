@@ -1,7 +1,9 @@
 import '../styles/index.scss';
 //import 'particles.js';
 //import './particles-conf';
+import './videos';
 import {data} from './data';
+
 
 
 
@@ -52,27 +54,7 @@ function addText(text){
 var tabs = document.getElementsByClassName('tab_btn');
 var products = document.getElementsByClassName('one_prod'); 
 var mob_prods = document.getElementsByClassName('one_prod_mob');
-var videos = [
-    {id:'6ZIMqjYIFw4', title:'What is Republia?', desc:'Welcome to #Republia community!'},
-    {id:'FliKqP0JBfg', title:'Vladyslav Gyrych about Republia project', desc:'Many years of experience in the implementation...'},
-    {id:'E2cfGsOGtvc', title:'Daniel Shulyaev about Republia project', desc:'Extensive experience in developing technologies...'},
-    {id:'nGxLlvRwhrI', title:'Hayk Khachatryan about Republia project', desc:'Technical Director of Republia'},
-    {id:'DHvctzCl52o', title:'Speech by Daniel Shulyaev in the Ukrainian Parliament', desc:'Co-founder of Republia Daniel Shulyaev...'},
-    {id:'2NH4hNxIrUg', title:'Speech by Vladyslav Gyrych in the Ukrainian Parliament', desc:'Co-founder of Republia Vladyslav Gyrych...'}
-];
 
-document.getElementById('mainvid').innerHTML='<iframe id="vid_frame" src="https://www.youtube.com/embed/'+videos[0].id+'?rel=0&showinfo=0&autohide=1" width="560" height="315" frameborder="0" allowfullscreen></iframe>';
-videos.map(item => {
-    const vidslist = document.getElementById('videoslist');
-
-     vidslist.innerHTML +=  `<div class="list_video" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/${item.id}?autoplay=1&rel=0&showinfo=0&autohide=1&autoplay=1'">
-                        <div class="thumb inl_t" style="background:url(https://img.youtube.com/vi/${item.id}/0.jpg) center center no-repeat; background-size:cover;"></div>
-                        <div class="vid_desc inl_t">
-                          <div class="vid_title">${item.title}</div>
-                          <div class="vid_anno">${item.desc}</div>
-                        </div>
-                      </div>`;
-});
 
 function slide(elem) {
   elem.classList.toggle('hide');

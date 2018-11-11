@@ -590,14 +590,14 @@ body, html {
   margin-bottom: 0px; }
 
 .thumb {
-  width: 118px;
+  width: 122px;
   height: 70px;
   background: red url("https://i.ytimg.com/vi/uVteeLDOlyk/maxresdefault.jpg") center center no-repeat;
   background-size: cover;
   border-radius: 3px; }
 
 .vid_desc {
-  width: calc(100% - 120px);
+  width: calc(100% - 122px);
   height: 70px;
   font-size: 10px;
   box-sizing: border-box;
@@ -1930,7 +1930,7 @@ body, html {
   .footer {
     box-sizing: border-box;
     height: 400px;
-    background: #1F1F1F url(public/images/svg/footer_bg.svg) center bottom no-repeat;
+    background: #1F1F1F url("") center bottom no-repeat;
     background-size: cover;
     color: #fff;
     position: relative; }
