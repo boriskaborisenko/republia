@@ -1,6 +1,9 @@
 import {TweenMax, Power2, TimelineMax} from "gsap/all";
 import {data2} from './data2';
-//import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from 'smoothscroll-polyfill';
+
+// kick off the polyfill!
+smoothscroll.polyfill();
 
 var words = ['FASTEST', 'safest', 'scalability', 'awesome', 'greatest'];
 let word = document.querySelector('#fsc1');
@@ -246,19 +249,23 @@ products.forEach(function (element) {
                 document.querySelector('.prod_status').classList.add('fadeInUp');
 
                 document.getElementById('prodpic').src = prod.image;
+                document.getElementById('prodtext').innerHTML = '';
                 document.getElementById('prodtext').innerHTML = prod.content;
                 document.getElementById('prodline').style.width = prod.percent + '%';
                 document.getElementById('prodpercent').innerHTML = prod.percent + '%';
                 document.getElementById('prodq').innerHTML = prod.q;
                 document.getElementById('proddate').innerHTML = prod.rel;
             }
-        }).to("#allprodbox", 0.5, {
+        }).to("#allprodbox", 0.9, {
             opacity: 1
         });
 
-        const active = document.querySelector('.active_prod');
-        active.classList.remove('active_prod');
-        this.classList.add('active_prod');
+        const active_t = document.querySelector('.active_prod_text');
+        const active_i = document.querySelector('.active_prod_icon');
+        active_t.classList.remove('active_prod_text');
+        active_i.classList.remove('active_prod_icon');
+        this.children[0].classList.add('active_prod_icon');
+        this.children[1].classList.add('active_prod_text');
 
     });
 });

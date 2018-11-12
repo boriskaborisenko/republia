@@ -839,13 +839,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     width:32px;
     height:32px;
     margin-right:10px;
+    opacity:0.7;
 }
 
 .prod_desc{
     color:$blue;
     font-size: 0.85rem;
     font-weight: 400;
-    zoom:100%;
+    opacity:0.7;
+    //zoom:100%;
+}
+
+.active_prod_icon {
+    opacity: 1;
+}
+
+.active_prod_text {
+    font-weight: 900!important;
+    opacity: 1!important;
+    //zoom:110%;
 }
 
 .prod_pic{
@@ -887,12 +899,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 
 .one_prod{
-   transition: all .3s ease;
-   zoom:100%;
+   //transition: all .3s ease;
+   //opacity:0.6;
 }
-.active_prod{
-    zoom:140%;
-}
+
 
 .prod_status{
     //background:coral;

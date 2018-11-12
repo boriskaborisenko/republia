@@ -43,7 +43,7 @@
              },
              product3: {
                  title: "REPUBLIA BANK",
-                 content: "RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security. Republia ID allows community members to influence the life of the ecosystem directly and ensures security through implementation into all parts of the global ecosystem. Identity Card that minimizes the risk of loss of funds or hacking user accounts.",
+                 content: "Republia Bank is a component of the economic model of the decentralized Republia ecosystem, which combined the principles of Central Banks and innovative technologies. Republia Bank automatically regulates demand and supply on stock exchanges and smooths volatility of RPB coin through balancing and automated analysis of the market situation.",
                  rel: "2019",
                  q: "Q1",
                  percent: 100,
