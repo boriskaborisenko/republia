@@ -32,7 +32,7 @@ function changeLetter() {
             var randletter = rs[randomInteger(1, rs.length - 1)];
             out = replaceAt(out, i, randletter);
             word.innerHTML = out;
-            console.log('cL');
+            //console.log('cL');
         }
     }
 }
@@ -53,13 +53,14 @@ function buildWord() {
             tl.to(word, 0.45, {
                 color: '#273be2',
             });
-            console.log('yup');
+            //console.log('yup');
             counter++;
         }
     } else {
         counter = 0;
         ind = 0;
         //word.classList.remove('colorful');
+        const tl = new TimelineMax();
         tl.to(word, 0.25, {
             color: '#000',
         });
