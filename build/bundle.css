@@ -4018,8 +4018,6 @@ body, html {
         color: #273be2;
         font-size: 0.9rem;
         font-weight: 900; }
-    .m_screen_nav ul li:first-child {
-      border-top: 1px solid #eee; }
   .m_screen_socials {
     position: absolute;
     bottom: 30px; }
@@ -4378,7 +4376,7 @@ body, html {
     transition: 0.5s all;
     border-bottom: 1px solid #eee; }
   .opened {
-    height: 450px; }
+    height: 470px; }
   .one_prod_mob {
     padding: 20px;
     font-size: 10px;
