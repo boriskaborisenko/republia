@@ -38,7 +38,7 @@ function changeLetter() {
 }
 
 
-const tl = new TimelineMax();
+
 
 function buildWord() {
 
@@ -49,7 +49,7 @@ function buildWord() {
             ind++;
             word.innerHTML = out;
         } else {
-
+            const tl = new TimelineMax();
             tl.to(word, 0.45, {
                 color: '#273be2',
             });
