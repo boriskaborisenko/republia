@@ -2758,11 +2758,12 @@ h2 {
 #fsc1 {
   position: absolute; }
 
-#fsc2 {
-  position: absolute; }
+.fcs {
+  color: #273be2;
+  transition: 0.4s all; }
 
-#fsc3 {
-  position: absolute; }
+.colorful {
+  color: orange !important; }
 
 * {
   -webkit-font-smoothing: antialiased;

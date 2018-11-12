@@ -200,9 +200,12 @@ height:auto;
 #fsc1{
     position:absolute;
 }
-#fsc2 {
-    position: absolute;
+
+.fcs{
+    color:$blue;
+    transition: 0.4s all;
 }
-#fsc3 {
-    position: absolute;
+
+.colorful{
+    color:orange!important;
 }
