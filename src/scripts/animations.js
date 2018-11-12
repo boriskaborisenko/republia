@@ -1,4 +1,4 @@
-import {TweenMax, Power2, TimelineLite} from "gsap/all";
+import {TweenMax, Power2, TimelineMax} from "gsap/all";
 //import smoothscroll from 'smoothscroll-polyfill';
 
 var words = ['FASTEST', 'safest', 'scalability', 'awesome', 'greatest'];
