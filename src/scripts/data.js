@@ -1,5 +1,6 @@
 var data = {
     content:[
+       
         {tabs:[
             
                {tab:'Easy-to-create and secure smart contracts help reduce the impact of the human factor and mitigate the risks and losses. Using Republia ID as a KYC module allows to optimize the costs of the user identification divisions.'},
@@ -7,6 +8,8 @@ var data = {
                {tab:'It is possible to create and sell smart contracts on the marketplace of the Republia Smart Contract Platform. Formal verification of the smart contract code before compilation ensures the complete control over the script building logic. OCaml also allows for modular, clear and compact source code and makes it easy to work with recursive structures such as syntax trees.'},
                {tab:'Users can make quick payments and use the RPB coin as a means of payment that is less volatile. Republia ID allows passing the KYC authentication once to use it further with partner companies. Also, average users without technical knowledge can create smart contracts from a template, for example, to pay rent or when lending.'}
         ]},
+        
+        
         {products:[
             {1:[
                 {text:'RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security. Republia ID allows community members to influence the life of the ecosystem directly and ensures security through implementation into all parts of the global ecosystem. Identity Card that minimizes the risk of loss of funds or hacking user accounts.'},

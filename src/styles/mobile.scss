@@ -40,6 +40,46 @@
        font-size: 0;
    }
 
+   .m_screen_nav{
+       //background:orange;
+       //margin:20px 0;
+       ul{margin:20px 0 40px 0; padding:0;
+            li{
+                list-style:none;
+                //background:$sky;
+                padding:15px 0;
+                border-bottom:1px solid #eee;
+                a{
+                    text-decoration: none;
+                    color:$blue;
+                    font-size: 0.9rem;
+                    font-weight: 900;
+                }
+            }
+            li:first-child{
+               border-top:1px solid #eee;
+            }
+        }
+   }
+
+   .m_screen_socials{
+       position:absolute;
+       bottom:30px;
+       ul{
+           margin:0px 0 0 0;
+           padding:0;
+           li{
+               display:inline-block;
+               margin-right:8px;
+               a{
+                   display:block;
+                   width:20px;
+                   height:20px;
+               }
+           }
+       }
+   }
+
    .mob_one{
        font-size: 10px;
        width:33.3%;
@@ -314,7 +354,7 @@
 
 
 .video {
-    padding: 0px 0 30px 0;
+    padding: 40px 0 30px 0;
     //background: coral;
     .inner{
         width:100%;
@@ -566,6 +606,40 @@
     .all_prods_mob{
         margin:40px auto 0 auto;
     }
+
+    .accordion {
+        //background-color: #eee;
+        //color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        border: none;
+        outline: none;
+    }
+    .accordion:first-child{
+        border-top:1px solid #eee;
+    }
+
+.panel {
+    padding: 0 18px;
+    background-color: #fafbfc;
+    //display: none;
+    overflow: hidden;
+    height:0;
+    transition: 0.5s all;
+    border-bottom:1px solid #eee;
+}
+
+.opened {
+    //background-color: orange;
+    height:450px;
+    //display:block;
+   
+}
+
+
     .one_prod_mob{
         //background:coral;
         padding:20px;
@@ -613,8 +687,11 @@
         height: 450px;
         margin: 0 auto;
         box-sizing: border-box;
-        transition: all 0.4s ease-in-out;
+        //display:none;
+        //transition: all 0.4s ease-in-out;
     }
+
+    
 
     .hided_text {
         position:absolute;
@@ -638,11 +715,13 @@
         transition: all 0.4s ease-in-out;
     }
 
+    /*
     .hide {
         height: 0!important;
         visibility: hidden;
         opacity: 0;
     }
+    */
 
     .prod_text {
         color: $blue;
@@ -704,7 +783,7 @@
     }
 
     .char_pic {
-        min-height: 230px;
+        height: 200px;
         box-shadow:0px 0px 10px rgba(0, 0, 0, 0.23);
     }
 
@@ -827,6 +906,12 @@
     text-align: center;
     //background:coral;
     color: #a19fe0;
+}
+
+.active_yt {
+    font-weight: 900;
+    color: $blue;
+
 }
 
 

@@ -22,6 +22,10 @@
     //background:orange;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body,html{
     //overflow-x:hidden;
     margin:0;
@@ -205,7 +209,8 @@ body,html{
 
 
 .inner{
-    width:1000px;
+    max-width:1000px;
+    width:100%;
     margin:0 auto;
     position:relative;
     
@@ -423,7 +428,7 @@ i{font-variant: normal;}
 }
 
 .scheme{
-    width:80%;
+    max-width:80%;
     margin:0 auto;
     padding:70px 0;
 }
@@ -746,7 +751,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .in_stat_line{
     height: 100%;
-    width:50%;
+    width:0%;
+    transition: all .7s ease;
     //background:olivedrab;
 }
 .in_stat_x{
@@ -996,18 +1002,18 @@ background:$blue;
     margin:0 auto 40px 0;
     width:80%;
     position:relative;
-    height: 300px;
-    margin-bottom: 120px;
-    //background:red;
+    height: 430px;
+    margin-bottom: 40px;
+    
     //height:500px;
 }
 .char_pic {
     background:url('https://breasiaproductions.com/wp-content/uploads/2015/08/imageplaceholder_02-736x736.jpg') top center no-repeat;
     background-size:cover;
-    border-radius: 6px 6px 10px 10px;
+    border-radius: 6px 6px 0px 0px;
     position:relative;
     z-index: 1;
-    min-height: 300px;
+    height: 300px;
     box-shadow:0px 0px 20px rgba(0,0,0,0.5);
 }
 
@@ -1024,12 +1030,12 @@ background:$blue;
     padding:15px 10px;
     width:100%;
     background:$blue;
-    position:absolute;
+    position:relative;
     z-index:10;
     bottom:-1px;
     border-radius: 0 0 6px 6px;
     font-size: 0;
-    
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .conts{width:calc(100% - 20px);}
@@ -1069,6 +1075,8 @@ background:$blue;
 
 .char_name{
     margin:20px 0 50px 0;
+    box-sizing: content-box;
+    padding:0 5px;
     color:#fff;
 }
 
@@ -1128,6 +1136,7 @@ background:$blue;
     line-height: 60px;
     font-weight: 700;
     color:rgba(0,0,0,0.45);
+    cursor:pointer;
 }
 
 .r_tab_active{

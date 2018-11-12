@@ -53,7 +53,7 @@
             <ul>
               <li id="toProds"><a href="javascript:void(0)">Our Products</a></li>
               <li id="toDocs"><a href="javascript:void(0)">Documents</a></li>
-              <li><a href="#">Roadmap</a></li>
+              <li id="toRoadmap"><a href="javascript:void(0)">Roadmap</a></li>
               <li id="toTeam"><a href="javascript:void(0)">Team</a></li>
             </ul>
           </div>
@@ -127,18 +127,32 @@
 
     <div class="mobmenu_screen mobile hide_nav">
       <div class="m_screen_nav">
+        <!--<div class="mnt"><h1 style="text-align: left">Menu</h1></div>-->
         <ul>
-          <li><a href="#">Nav link1</a></li>
-          <li><a href="#">Nav link1</a></li>
-          <li><a href="#">Nav link1</a></li>
-          <li><a href="#">Nav link1</a></li>
+          <li id="m_toProdsMobile"><a href="javascript:void(0)">Our products</a></li>
+          <li id="m_toDocs"><a href="javascript:void(0)">Documents</a></li>
+          <li id="m_toRoadmap"><a href="javascript:void(0)">Roadmap</a></li>
+          <li id="m_toTeam"><a href="javascript:void(0)">Team</a></li>
         </ul>
       </div>
       <div class="m_screen_login_auth">
         <div class="solid_b_btn"><a target="_blank" href="https://republia.io/mvp?#/">GET REPUBLIA ID</a></div>
       </div>
       <div class="m_screen_socials">
-        icons
+        <ul>
+          <li><a target="_blank" href="https://github.com/republia"><img src="../public/images/svg/soc_side/gth.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/republia.group/"><img src="../public/images/svg/soc_side/fb.svg"
+                alt=""></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCG3GhBOmWfbfhlgjRcPAIqg"><img src="../public/images/svg/soc_side/ytb.svg"
+                alt=""></a></li>
+          <li><a target="_blank" href="https://medium.com/@republia"><img src="../public/images/svg/soc_side/m.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://twitter.com/Republia_Group"><img src="../public/images/svg/soc_side/tw.svg"
+                alt=""></a></li>
+          <li><a target="_blank" href="https://t.me/joinchat/GYZTvxF7hZ8BfRhyVSHY-A"><img src="../public/images/svg/soc_side/tg.svg"
+                alt=""></a></li>
+          <li><a target="_blank" href="https://bitcointalk.org/index.php?topic=4841968.20"><img src="../public/images/svg/soc_side/btc.svg"
+                alt=""></a></li>
+      </ul>
       </div>
     </div>
 
@@ -267,13 +281,13 @@
       </div>
     </section>
 
-    <section class="next_integr">
+    <section class="next_integr" style="display:none;">
       <div class="inner">
         <div class="title">
           <h1>Next Generation Blockchain</h1>
         </div>
         <div class="scheme">
-          <img src="../public/images/svg/scheme.svg" alt="">
+          <img src="../public/images/svg/scheme.svg" alt="" class="fluidpic">
         </div>
       </div>
     </section>
@@ -302,6 +316,7 @@
       <div class="inner">
         <h2>Safest smart-contracts</h2>
         <div class="smart_contr_text">
+          <div>
           Republia Virtual Machine is implemented using functional programming language Michelson, which supports
           formal code verification that allows verifying smart contract before it is launched on the network. Thus, due
           to formal code verification, Republia VM will not execute smart contract in case an error occurs. Moreover,
@@ -309,11 +324,13 @@
           correctness, because Turing completeness avoids fraud and delays in smart contracts. The smart contract,
           created on Republia platform, will never get caught in an endless loop, because it operates under the
           principle of a timestamp, which ensures execution of a digital contract.
+          </div>
+        <div class="ss_btns">
+          <div class="solid_w_btn">Watch</div>
+          <div class="trans_w_btn">read more</div>
         </div>
-        <!--<div class="ss_btns">
-              <div class="solid_w_btn">Watch</div>
-              <div class="trans_w_btn">read more</div>
-            </div>-->
+        </div>
+        
       </div>
     </section>
 
@@ -392,14 +409,14 @@
               <div class="one_graph">
                 <div class="graph_text inl_m pink_text"><span>&infin;</span> tps</div>
                 <div class="graph_line inl_m">
-                  <div class="in_stat_line pink_line" style="width:100%;"></div>
+                  <div class="in_stat_line pink_line" id="line1red"  ></div>
                   <div class="in_stat_x pink_line"></div>
                 </div>
               </div>
               <div class="one_graph">
                 <div class="graph_text inl_m sky_text">1 sec</div>
                 <div class="graph_line inl_m">
-                  <div class="in_stat_line sky_line" style="width:80%;"></div>
+                  <div class="in_stat_line sky_line" id="line1blue"></div>
                   <div class="in_stat_x sky_line"></div>
                 </div>
               </div>
@@ -484,14 +501,16 @@
         <div class="all_dev">
           <div class="dev_pic inl_m"><img src="../public/images/svg/xxx.svg" alt=""></div>
           <div class="dev_text inl_m">
+            <div>
             Republia Ecosystem introduces an improved voting system, with the help of which all changes are implemented
             through consensus, which entails an automated update of the protocol among users. Thus, Republia Blockchain
             avoids hard forks. Moreover, Republia Blockchain protocol is divided into three layers (network layer,
             consensus layer, transaction layer) and layer separation allows to change protocol without hard forks.
-            <!--<div class="ss_btns">
+            </div>
+            <div class="ss_btns">
                       <div class="solid_w_btn">Watch</div>
                       <div class="trans_w_btn">read more</div>
-                  </div>  -->
+            </div> 
           </div>
         </div>
       </div>
@@ -559,7 +578,8 @@
           </div>
           <div class="prod_cont inl_m">
             <div class="prod_cont_box" id="prodbox">
-              <div class="prod_pic"><img src="../public/images/svg/mobile.png" alt="" class="fluidpic"></div>
+              <div id="allprodbox">
+              <div class="prod_pic"><img id="prodpic" src="../public/images/svg/mobile.png" alt="" class="fluidpic"></div>
               <div class="prod_text" id="prodtext">
                 RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
                 Republia ID allows community members to influence the life of the ecosystem directly and ensures
@@ -592,22 +612,401 @@
                   <div class="solid_b_btn">Get free coin</div>
                 </a>
               </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="products_mob mobile">
+    <section class="products_mob mobile" id="goProdsMobile">
       <div class="inner_prod">
         <div class="title">
           <h1>Republia products</h1>
         </div>
         <div class="all_prods_mob">
           
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          <div class="accordion">
+            <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
+            <div class="vis_title inl_m">title</div>
+            <div class="vis_opcl inl_m"></div>
+          </div>
+          <div class="panel">
+
+            <div class="hided_part">
+              <div class="hided_text">
+                <div class="prod_text">
+                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
+                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
+                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
+                  the risk of loss of funds or hacking user accounts.
+                </div>
+                <div class="prod_status">
+                  <div class="status_block">
+                    <div class="status_title">
+                      Status
+                    </div>
+                    <div class="status_perc inl_m" id="prodpercent">73%</div>
+                    <div class="status_line inl_m">
+                      <div class="status_bar">
+                        <div class="status_complete" id="prodline" style="width:73%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_block">
+                    <div class="status_title">
+                      Release date
+                    </div>
+                    <div class="status_perc inl_m" id="prodq">Q1</div>
+                    <div class="status_line inl_m" id="proddate">2019</div>
+                  </div>
+          
+                </div>
+                <div class="prod_btn">
+                  <a href="https://republia.io/mvp?#/" target="_blank">
+                    <div class="solid_b_btn">Get free coin</div>
+                  </a>
+                </div>
+              </div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+            </div>
+
+          </div>
+
+          
+          <!--
           <div class="one_prod_mob">
             <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_1.svg" alt=""></div>
+              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
               <div class="vis_title inl_m">title</div>
               <div class="vis_opcl inl_m"></div>
             </div>
@@ -638,51 +1037,6 @@
                     <div class="status_perc inl_m" id="prodq">Q1</div>
                     <div class="status_line inl_m" id="proddate">2019</div>
                   </div>
-                
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_2.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
           
                 </div>
                 <div class="prod_btn">
@@ -691,280 +1045,11 @@
                   </a>
                 </div>
               </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
+              <div class="hided_pic "><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
             </div>
           </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_3.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
-          
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_4.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
-          
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_5.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
-          
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_6.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
-          
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_7.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
-          
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-
-          <div class="one_prod_mob">
-            <div class="visible_part">
-              <div class="vis_icon inl_m"><img src="../public/images/svg/prods/pr_8.svg" alt=""></div>
-              <div class="vis_title inl_m">title</div>
-              <div class="vis_opcl inl_m"></div>
-            </div>
-            <div class="hided_part hide">
-              <div class="hided_text hide">
-                <div class="prod_text">
-                  RepubliaID is a digital-analog of Identity Card, the main feature of which is advanced security.
-                  Republia ID allows community members to influence the life of the ecosystem directly and ensures
-                  security through implementation into all parts of the global ecosystem. Identity Card that minimizes
-                  the risk of loss of funds or hacking user accounts.
-                </div>
-                <div class="prod_status">
-                  <div class="status_block">
-                    <div class="status_title">
-                      Status
-                    </div>
-                    <div class="status_perc inl_m" id="prodpercent">73%</div>
-                    <div class="status_line inl_m">
-                      <div class="status_bar">
-                        <div class="status_complete" id="prodline" style="width:73%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="status_block">
-                    <div class="status_title">
-                      Release date
-                    </div>
-                    <div class="status_perc inl_m" id="prodq">Q1</div>
-                    <div class="status_line inl_m" id="proddate">2019</div>
-                  </div>
-          
-                </div>
-                <div class="prod_btn">
-                  <a href="https://republia.io/mvp?#/" target="_blank">
-                    <div class="solid_b_btn">Get free coin</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hided_pic hide"><img src="../public/images/svg/mobile_m.png" alt="" class="fluidpic"></div>
-            </div>
-          </div>
-          
+        
+        -->
           
 
 
@@ -1171,6 +1256,7 @@
 
           <div class="one_of_3_team inl_t">
             <div class="one_char">
+              
               <div class="char_pic gray dan">
               </div>
               <div class="char_info">
@@ -1498,38 +1584,38 @@
       </div>
     </section>
 
-    <section class="roadmap">
+    <section class="roadmap" id="goRoadmap">
       <div class="inner">
         <div class="title">
           <h1>Roadmap</h1>
         </div>
         <div class="roadmap_box">
-          <div class="r_date">2019</div>
+          <div class="r_date" id="r_date">2019</div>
           <div class="r_tabs">
-            <div class="r_tab inl_m">q1</div>
-            <div class="r_tab inl_m r_tab_active">q2</div>
-            <div class="r_tab inl_m">q3</div>
-            <div class="r_tab inl_m">q4</div>
+            <div class="r_tab inl_m" id="q1">q1</div>
+            <div class="r_tab inl_m r_tab_active" id="q2">q2</div>
+            <div class="r_tab inl_m" id="q3">q3</div>
+            <div class="r_tab inl_m" id="q4">q4</div>
           </div>
           <div class="r_main">
-            <div class="r_screen">screen</div>
+            <div class="r_screen" id="r_screen">screen</div>
           </div>
           <div class="r_years">
             <div class="y_line"></div>
             <ul>
-              <li>
+              <li class="yearBtn">
                 <div class="r_y">2018</div>
               </li>
-              <li class="active_y">
-                <div class=" active_yt r_y">2019</div>
+              <li class="yearBtn active_y">
+                <div class="active_yt r_y">2019</div>
               </li>
-              <li>
+              <li class="yearBtn">
                 <div class="r_y">2020</div>
               </li>
-              <li>
+              <li class="yearBtn">
                 <div class="r_y">2021</div>
               </li>
-              <li>
+              <li class="yearBtn">
                 <div class="r_y">2022</div>
               </li>
             </ul>
