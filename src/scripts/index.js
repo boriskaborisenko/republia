@@ -1,7 +1,7 @@
 import '../styles/index.scss';
-//import 'particles.js';
-//import './particles-conf';
-//import './videos';
+import 'particles.js';
+import './particles-conf';
+import './videos';
 import './animations';
 import {data} from './data';
 import {data2} from './data2';
@@ -49,7 +49,7 @@ function addText(text){
 var aTab = '1';
 const tabs = document.querySelectorAll('.tab_btn');
 tabs.forEach(function (element) {
-  element.addEventListener('pointerdown', function (e) {
+  element.addEventListener('click', function (e) {
     //e.preventDefault();
     const tab_id = element.id.slice(3, 4);
     aTab = tab_id;
@@ -80,7 +80,7 @@ tabs.forEach(function (element) {
 var cProd = 'product1';
 const products = document.querySelectorAll('.one_prod');
 products.forEach(function (element) {
-      element.addEventListener('pointerdown', function (e) {
+      element.addEventListener('click', function (e) {
         const prod_id = element.id.slice(5, 6);
         cProd = prod_id;
         const prod = data2.content.EN.products['product' + cProd];
@@ -127,7 +127,7 @@ products.forEach(function (element) {
 var roadmapYear = '2019';
 const roadmapYearBtn = document.querySelectorAll('.yearBtn');
 roadmapYearBtn.forEach(function(element){
-  element.addEventListener('pointerdown', function (e) {
+  element.addEventListener('click', function (e) {
     
     const active = document.querySelector('.active_y');
     active.classList.remove('active_y');
@@ -166,7 +166,7 @@ roadmapYearBtn.forEach(function(element){
 var qTab = 'q1';
 const qYearBtn = document.querySelectorAll('.r_tab');
 qYearBtn.forEach(function(element){
-  element.addEventListener('pointerdown', function (e) {
+  element.addEventListener('click', function (e) {
       
       const active = document.querySelector('.r_tab_active');
       active.classList.remove('r_tab_active');
@@ -190,7 +190,7 @@ qYearBtn.forEach(function(element){
 
 const mob_products = document.querySelectorAll('.accordion');
 mob_products.forEach(function (element) {
-      element.addEventListener('pointerdown', function (e) {
+      element.addEventListener('click', function (e) {
         
         var panel = this.nextElementSibling;
         panel.classList.toggle("opened");

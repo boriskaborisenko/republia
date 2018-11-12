@@ -6,7 +6,7 @@ var menu = ['Prods', 'Docs', 'Team', 'Roadmap', 'Video'];
 menu.forEach(function (elem) {
     let to = '#to'+elem;
     let go = '#go'+elem;
-    document.querySelector(to).addEventListener("pointerdown", function () {
+    document.querySelector(to).addEventListener("click", function () {
         if(elem == 'Video'){
             scrollToDiv(go, 70);
         }else{
@@ -19,7 +19,7 @@ var mobmenu = ['ProdsMobile', 'Docs', 'Team', 'Roadmap'];
 mobmenu.forEach(function (elem) {
     let to = '#m_to' + elem;
     let go = '#go' + elem;
-    document.querySelector(to).addEventListener("pointerdown", function () {
+    document.querySelector(to).addEventListener("click", function () {
         scrollToDiv(go, 40);
         document.querySelector('.mobmenu_screen').classList.toggle('hide_nav');
         document.querySelector('.mobburger').classList.toggle('burgclose');
