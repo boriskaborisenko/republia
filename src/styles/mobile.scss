@@ -73,8 +73,8 @@
                margin-right:8px;
                a{
                    display:block;
-                   width:20px;
-                   height:20px;
+                   width:24px;
+                   height:24px;
                }
            }
        }
@@ -349,6 +349,54 @@
         margin:20px auto;
         //padding: 0 20px;
         //box-sizing: border-box;
+    }
+
+
+    .next_integr{
+        .inner{
+            width:100%;
+        }
+    }
+
+    .all_scheme {
+        margin-top:30px;
+        font-size: 0;
+        padding: 10px 0;
+        background:  url('../../public/images/svg/scheme_mob.png') left center no-repeat;
+        background-size:contain;
+    }
+
+    .scheme_side_l {
+        width: 0%;
+        display:none;
+        font-size: 10px;
+        background: transparent;
+    }
+
+    .scheme_side_r {
+        //background:red;
+        width: 70%;
+        display:block;
+        margin-left: 15%;
+        //max-width: 270px;
+        font-size: 10px;
+    }
+
+    .scheme_text {
+        //margin: 60px 0;
+    }
+
+    .scheme_title {
+        color: $blue;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 0.9rem;
+    }
+
+    .scheme_anno {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
     }
 
 
