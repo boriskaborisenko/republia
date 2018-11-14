@@ -233,6 +233,8 @@ tabs.forEach(function (element) {
         aTab = tab_id;
         const tabcont = data2.content.EN.allTabs['tab' + aTab].left;
 
+        document.getElementById('tab_content').innerHTML = tabcont;
+        /*
         const tl = new TimelineMax();
         tl.to("#tab_content", 0.55, {
             //opacity: 0,
@@ -247,6 +249,7 @@ tabs.forEach(function (element) {
                 document.querySelector('#tab_content').classList.add('fadeIn');
             }
         });
+        */
 
         const active = document.querySelector('.active_tab');
         active.classList.remove('active_tab');
