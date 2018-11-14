@@ -5,6 +5,32 @@ import smoothscroll from 'smoothscroll-polyfill';
 // kick off the polyfill!
 smoothscroll.polyfill();
 
+
+fillMobProds();
+
+function fillMobProds(){
+    let prods = data2.content.EN.products;
+    Object.keys(prods).map(function (key, index) {
+        const mX = '#mp'+(index+1);
+        const mXdiv = document.querySelector(mX);
+        const panel = mXdiv.nextElementSibling;
+        mXdiv.children[0].children[0].src = '../public/images/svg/prods/pr_'+(index+1)+'.svg';
+        mXdiv.children[1].innerHTML = prods[key].title;
+        panel.children[0].children[0].children[0].innerHTML = prods[key].content;
+        panel.children[0].children[0].children[1].children[0].children[1].innerHTML = prods[key].percent+'%';
+        panel.children[0].children[0].children[1].children[0].children[2].children[0].children[0].style.width = prods[key].percent + '%';
+        panel.children[0].children[0].children[1].children[1].children[1].innerHTML = prods[key].q;
+        panel.children[0].children[0].children[1].children[1].children[2].innerHTML = prods[key].rel;
+        console.log(panel);
+        //console.log(prods[key].title);
+    });
+
+    //console.log(myObject);
+    let mobprod1 = document.querySelector('#mp1');
+}
+
+
+
 var words = ['FASTEST', 'safest', 'scalability', 'awesome', 'greatest'];
 let word = document.querySelector('#fsc1');
 let rs = 'ABCDEFGHIJKLMONPQRSTUVWXYZ@#$%&+=';
@@ -28,7 +54,7 @@ var ind = 0;
 var counter = 0;
 
 var myInt1 = setInterval(changeLetter, 50);
-var myInt2 = setInterval(buildWord, 400);
+var myInt2 = setInterval(buildWord, 200);
 
 function changeLetter() {
     if (ind < yup.length) {
@@ -46,17 +72,19 @@ function changeLetter() {
 
 function buildWord() {
 
-    if (counter < 5) {
+    if (counter < 2) {
         if (ind < yup.length) {
             counter = 0;
             out = replaceAt(out, ind, yup[ind]);
             ind++;
             word.innerHTML = out;
         } else {
+            /*
             const tl = new TimelineMax();
             tl.to(word, 0.45, {
                 color: '#273be2',
             });
+            */
             //console.log('yup');
             counter++;
         }
@@ -64,11 +92,12 @@ function buildWord() {
         counter = 0;
         ind = 0;
         //word.classList.remove('colorful');
+        /*
         const tl = new TimelineMax();
         tl.to(word, 0.25, {
             color: '#000',
         });
-
+        */
         wc++;
         if (wc > words.length - 1) {
             wc = 0;
@@ -128,14 +157,21 @@ const scrollToDiv = (selector, distance) => {
 window.onscroll = function () {
     glueMenu();
 
-    animElement('.all_benefits', 200, 'fadeInUp');
+    animElement('.all_benefits', 120, 'fadeInUp');
     animElement('.tabs_block', 900, 'fadeInUp');
-    animElement('.videobox', 2400, 'fadeInUp');
+    animElement('.scheme_text', 1700, 'fadeInLeft');
+    animElement('.smart_contr_text', 2900, 'fadeInLeft');
     animElement('.all_whys', 3600, 'fadeInUp');
-    animElement('.doc_icon', 6600, 'rotateIn');
+    animElement('.one_doc', 6600, 'rotateIn');
 
-    animLine('#line1red', 4500, 100);
-    animLine('#line1blue', 4500, 80);
+    animLine('#line1red', 4650, 100);
+    animLine('#line1blue', 4650, 80);
+    animLine('#line2red', 4650, 40);
+    animLine('#line2blue', 4650, 20);
+    animLine('#line3red', 4650, 16);
+    animLine('#line3blue', 4650, 10);
+    animLine('#line4red', 4650, 6);
+    animLine('#line4blue', 4650, 1);
 };
 
 
@@ -154,7 +190,7 @@ function glueMenu() {
         header.classList.remove("sticky");
     }
 }
-
+/*
 function disableLetters(){
     if (window.pageYOffset > 500) {
         clearInterval(myInt1);
@@ -166,12 +202,12 @@ function disableLetters(){
     }
     
 }
-
+*/
 
 function animElement(selector, fromtop, anim) {
-    //console.log(window.innerHeight, window.pageYOffset)
     const el = document.querySelectorAll(selector);
-    if (window.pageYOffset > fromtop) {
+    if (window.pageYOffset > fromtop && window.innerWidth > 720) {
+        //console.log('play', selector, window.pageYOffset, fromtop);
         [].forEach.call(el, function (div) {
             div.classList.add('animated');
             div.classList.add(anim);
@@ -199,9 +235,10 @@ tabs.forEach(function (element) {
 
         const tl = new TimelineMax();
         tl.to("#tab_content", 0.55, {
-            opacity: 0,
+            //opacity: 0,
             onStart: function () {
                 document.querySelector('#tab_content').classList.add('animated');
+                document.querySelector('#tab_content').classList.add('fast');
                 document.querySelector('#tab_content').classList.add('fadeOut');
             },
             onComplete: function () {
@@ -209,8 +246,6 @@ tabs.forEach(function (element) {
                 document.querySelector('#tab_content').classList.remove('fadeOut');
                 document.querySelector('#tab_content').classList.add('fadeIn');
             }
-        }).to("#tab_content", 0.55, {
-            opacity: 1
         });
 
         const active = document.querySelector('.active_tab');
@@ -231,7 +266,8 @@ products.forEach(function (element) {
         tl.to("#allprodbox", 0.5, {
             opacity: 0,
             onStart: function () {
-                console.log('kkk');
+                //console.log('kkk');
+                document.getElementById('prodline').style.width = '0%';
                 document.querySelector('.prod_pic').classList.add('animated');
                 document.querySelector('.prod_pic').classList.add('fadeOutRight');
                 document.querySelector('#prodtext').classList.add('animated');
@@ -251,7 +287,13 @@ products.forEach(function (element) {
                 document.getElementById('prodpic').src = prod.image;
                 document.getElementById('prodtext').innerHTML = '';
                 document.getElementById('prodtext').innerHTML = prod.content;
-                document.getElementById('prodline').style.width = prod.percent + '%';
+                
+                setTimeout(()=>{
+                    document.getElementById('prodline').style.width = prod.percent + '%';
+                },800);
+                
+                
+                
                 document.getElementById('prodpercent').innerHTML = prod.percent + '%';
                 document.getElementById('prodq').innerHTML = prod.q;
                 document.getElementById('proddate').innerHTML = prod.rel;

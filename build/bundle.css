@@ -2536,7 +2536,8 @@
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  visibility: visible !important; }
 
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
@@ -2764,6 +2765,9 @@ h2 {
 
 .colorful {
   color: orange !important; }
+
+.invis {
+  visibility: hidden; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -3485,11 +3489,14 @@ body, html {
   opacity: 0.7; }
 
 .active_prod_icon {
-  opacity: 1; }
+  opacity: 1;
+  zoom: 170%; }
 
 .active_prod_text {
-  font-weight: 900 !important;
-  opacity: 1 !important; }
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  zoom: 120%;
+  text-shadow: 0px 0px 0px black, 0 0 20px rgba(0, 0, 0, 0.23); }
 
 .prod_pic {
   width: 260px;
@@ -3558,7 +3565,9 @@ body, html {
 
 .status_complete {
   background: #43CC6D;
-  height: 100%; }
+  height: 100%;
+  width: 0;
+  transition: 0.8s all; }
 
 .prod_btn {
   margin-bottom: 20px; }
@@ -3586,11 +3595,16 @@ body, html {
     font-weight: 900;
     text-transform: uppercase; }
 
+.doc_title {
+  text-align: center;
+  margin: 0 auto;
+  width: 120px; }
+
 .doc_icon {
   background: url(public/images/svg/doc.svg) center center no-repeat;
   background-size: contain;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto; }
 
 .team {
@@ -4015,6 +4029,8 @@ body, html {
     display: none !important; }
   .mobile {
     display: block; }
+  .invis {
+    visibility: visible; }
   .mobmenu_screen {
     position: fixed;
     width: 100%;
@@ -4188,6 +4204,10 @@ body, html {
     box-sizing: border-box;
     padding: 20px 20px 30px 40px;
     position: relative; }
+  .audience {
+    background: #273be2 url("") right bottom no-repeat;
+    background-size: contain;
+    padding: 40px 0 30px 0; }
   .tab_btn {
     cursor: pointer;
     width: calc(25% - 3px);

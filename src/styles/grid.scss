@@ -270,11 +270,13 @@ i{font-variant: normal;}
 
 .benefits{
     padding:60px 0;
+    
 }
  
 .all_benefits{
     font-size: 0;
     margin: 0px 0;
+    
     //background:red;
 }
 
@@ -872,6 +874,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     height:32px;
     margin-right:10px;
     opacity:0.7;
+    //transition: 0.2s all;
 }
 
 .prod_desc{
@@ -884,12 +887,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .active_prod_icon {
     opacity: 1;
+    zoom:170%;
 }
 
+
 .active_prod_text {
-    font-weight: 900!important;
+    font-weight: 700!important;
     opacity: 1!important;
-    //zoom:110%;
+    zoom:120%;
+    text-shadow: 0px 0px 0px black, 0 0 20px rgba(0,0,0,0.23);
 }
 
 .prod_pic{
@@ -981,7 +987,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 .status_complete{
     background:$green;
     height: 100%;
+    width:0;
+    transition:0.8s all;
 }
+
+
 
 .prod_btn{
 margin-bottom:20px;
@@ -1014,11 +1024,17 @@ margin-bottom:20px;
     }
 }
 
+.doc_title{
+text-align:center;
+margin:0 auto;
+width:120px;
+}
+
 .doc_icon{
-    background:url('../../public/images/svg/doc.svg') center center no-repeat;
+    background: url('../../public/images/svg/doc.svg') center center no-repeat;
     background-size: contain;
-    width:140px;
-    height:140px;
+    width:120px;
+    height:120px;
     margin:0 auto;
 }
 
