@@ -31,7 +31,7 @@
                  rel: "2019",
                  q: "Q1",
                  percent: 73,
-                 image: '../public/images/svg/mobile.png'
+                 image: '01.png'
              },
              product2: {
                  title: "DAPPS PLATFORM",
@@ -39,7 +39,7 @@
                  rel: "2020",
                  q: "Q2",
                  percent: 12,
-                 image: '../public/images/svg/mobile.png'
+                 image: '02.png'
              },
              product3: {
                  title: "REPUBLIA BANK",
@@ -47,7 +47,7 @@
                  rel: "2019",
                  q: "Q1",
                  percent: 100,
-                 image: '../public/images/svg/mobile.png'
+                 image: '03.png'
              },
              product4: {
                  title: "REPUBLIA SC PLATFROM",
@@ -55,7 +55,7 @@
                  rel: "2020",
                  q: "Q3",
                  percent: 34,
-                 image: '../public/images/svg/mobile.png'
+                 image: '04.png'
              },
              product5: {
                  title: "CLOUDX",
@@ -63,7 +63,7 @@
                  rel: "2021",
                  q: "Q4",
                  percent: 7,
-                 image: '../public/images/svg/mobile.png'
+                 image: '05.png'
              },
              product6: {
                  title: "REPUBLIA EXCHANGE",
@@ -71,7 +71,7 @@
                  rel: "2019",
                  q: "Q4",
                  percent: 23,
-                 image: '../public/images/svg/mobile.png'
+                 image: '06.png'
              },
              product7: {
                  title: " REPUBLIA WALLET",
@@ -79,7 +79,7 @@
                  rel: "2019",
                  q: "Q1",
                  percent: 100,
-                 image: '../public/images/svg/mobile.png'
+                 image: '03.png'
              },
              product8: {
                  title: " REPUBLIA VOTING",
@@ -87,7 +87,7 @@
                  rel: "2019",
                  q: "Q2",
                  percent: 57,
-                 image: '../public/images/svg/mobile.png'
+                 image: '04.png'
              },
              
 

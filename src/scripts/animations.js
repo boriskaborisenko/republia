@@ -21,6 +21,7 @@ function fillMobProds(){
         panel.children[0].children[0].children[1].children[0].children[2].children[0].children[0].style.width = prods[key].percent + '%';
         panel.children[0].children[0].children[1].children[1].children[1].innerHTML = prods[key].q;
         panel.children[0].children[0].children[1].children[1].children[2].innerHTML = prods[key].rel;
+        panel.children[0].children[1].children[0].src = '../public/images/mobile_mob/'+prods[key].image;
         console.log(panel);
         //console.log(prods[key].title);
     });
@@ -31,9 +32,9 @@ function fillMobProds(){
 
 
 
-var words = ['FASTEST', 'safest', 'scalability', 'awesome', 'greatest'];
+var words = ['FASTEST', 'safest', 'scalability'];
 let word = document.querySelector('#fsc1');
-let rs = 'ABCDEFGHIJKLMONPQRSTUVWXYZ@#$%&+=';
+let rs = 'ABCDEFGHIJKLMONPQRSTUVWXYZ@#$%&+=0987654321';
 
 // replace the 'n'th character of 's' with 't'
 function replaceAt(s, n, t) {
@@ -295,7 +296,7 @@ products.forEach(function (element) {
                     document.getElementById('prodline').style.width = prod.percent + '%';
                 },800);
                 
-                
+                document.getElementById('prodpic').src = '../public/images/mobile_laptop/'+prod.image;
                 
                 document.getElementById('prodpercent').innerHTML = prod.percent + '%';
                 document.getElementById('prodq').innerHTML = prod.q;
