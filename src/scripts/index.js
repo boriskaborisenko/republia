@@ -2,6 +2,7 @@ import '../styles/index.scss';
 //import 'particles.js';
 //import './particles-conf';
 import './videos';
+import './prods';
 import './animations';
 
 

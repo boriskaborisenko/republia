@@ -796,23 +796,42 @@
     .all_docs {
         font-size: 0;
         margin: 30px auto;
-        width: 80%;
+        width: 90%;
+        //background:green;
     }
 
     .one_doc {
-        margin: 0 auto 50px auto;
+        margin: 0 auto 20px auto;
         text-align: center;
-        box-sizing: border-box;
-        padding: 0px;
+        //box-sizing: border-box;
+        //padding: 0px;
+
+        width:50%;
+        height:auto;
+
+        
 
         a {
+            margin:0 auto;
+            width:120px;
+            height:120px;
+            display:block;
             color: #000;
             text-decoration: none;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-weight: 900;
             text-transform: uppercase;
+            box-sizing: border-box;
+            padding-top:47px;
+            padding-left:5px;
+        }
+
+        .one_doc_fix {
+            padding-top: 42px;
         }
     }
+
+    
 
     .doc_icon {
         background: url('../../public/images/svg/doc.svg') center center no-repeat;

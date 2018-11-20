@@ -6,29 +6,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
 
-fillMobProds();
 
-function fillMobProds(){
-    let prods = data2.content.EN.products;
-    Object.keys(prods).map(function (key, index) {
-        const mX = '#mp'+(index+1);
-        const mXdiv = document.querySelector(mX);
-        const panel = mXdiv.nextElementSibling;
-        mXdiv.children[0].children[0].src = '../public/images/svg/prods/pr_'+(index+1)+'.svg';
-        mXdiv.children[1].innerHTML = prods[key].title;
-        panel.children[0].children[0].children[0].innerHTML = prods[key].content;
-        panel.children[0].children[0].children[1].children[0].children[1].innerHTML = prods[key].percent+'%';
-        panel.children[0].children[0].children[1].children[0].children[2].children[0].children[0].style.width = prods[key].percent + '%';
-        panel.children[0].children[0].children[1].children[1].children[1].innerHTML = prods[key].q;
-        panel.children[0].children[0].children[1].children[1].children[2].innerHTML = prods[key].rel;
-        panel.children[0].children[1].children[0].src = '../public/images/mobile_mob/'+prods[key].image;
-        console.log(panel);
-        //console.log(prods[key].title);
-    });
-
-    //console.log(myObject);
-    let mobprod1 = document.querySelector('#mp1');
-}
 
 
 
@@ -258,63 +236,8 @@ tabs.forEach(function (element) {
     });
 });
 
-var cProd = 'product1';
-const products = document.querySelectorAll('.one_prod');
-products.forEach(function (element) {
-    element.addEventListener('click', function (e) {
-        const prod_id = element.id.slice(5, 6);
-        cProd = prod_id;
-        const prod = data2.content.EN.products['product' + cProd];
 
-        const tl = new TimelineMax();
-        tl.to("#allprodbox", 0.5, {
-            opacity: 0,
-            onStart: function () {
-                //console.log('kkk');
-                document.getElementById('prodline').style.width = '0%';
-                document.querySelector('.prod_pic').classList.add('animated');
-                document.querySelector('.prod_pic').classList.add('fadeOutRight');
-                document.querySelector('#prodtext').classList.add('animated');
-                document.querySelector('#prodtext').classList.add('fadeOutDown');
-                document.querySelector('.prod_status').classList.add('animated');
-                document.querySelector('.prod_status').classList.add('fadeOutDown');
-            },
-            onComplete: function () {
-                document.querySelector('.prod_pic').classList.remove('fadeOutRight');
-                document.querySelector('.prod_pic').classList.add('fadeInRight');
-                document.querySelector('#prodtext').classList.remove('fadeOutDown');
-                document.querySelector('#prodtext').classList.add('fadeInUp');
 
-                document.querySelector('.prod_status').classList.remove('fadeOutDown');
-                document.querySelector('.prod_status').classList.add('fadeInUp');
-
-                document.getElementById('prodpic').src = prod.image;
-                document.getElementById('prodtext').innerHTML = '';
-                document.getElementById('prodtext').innerHTML = prod.content;
-                
-                setTimeout(()=>{
-                    document.getElementById('prodline').style.width = prod.percent + '%';
-                },800);
-                
-                document.getElementById('prodpic').src = '../public/images/mobile_laptop/'+prod.image;
-                
-                document.getElementById('prodpercent').innerHTML = prod.percent + '%';
-                document.getElementById('prodq').innerHTML = prod.q;
-                document.getElementById('proddate').innerHTML = prod.rel;
-            }
-        }).to("#allprodbox", 0.9, {
-            opacity: 1
-        });
-
-        const active_t = document.querySelector('.active_prod_text');
-        const active_i = document.querySelector('.active_prod_icon');
-        active_t.classList.remove('active_prod_text');
-        active_i.classList.remove('active_prod_icon');
-        this.children[0].classList.add('active_prod_icon');
-        this.children[1].classList.add('active_prod_text');
-
-    });
-});
 
 var roadmapYear = '2019';
 const roadmapYearBtn = document.querySelectorAll('.yearBtn');
@@ -380,23 +303,6 @@ qYearBtn.forEach(function (element) {
 
 
 
-const mob_products = document.querySelectorAll('.accordion');
-mob_products.forEach(function (element) {
-    element.addEventListener('click', function (e) {
 
-        var panel = this.nextElementSibling;
-        panel.classList.toggle("opened");
-        /*
-                if (panel.classList.contains("opened")) {
-                  window.scrollBy({
-                    top: 150,
-                    left: 0,
-                    behavior: 'smooth'
-                  });
-                  
-
-                } */
-    });
-});
 
 
