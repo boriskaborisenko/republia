@@ -31,7 +31,7 @@
                  rel: "2019",
                  q: "Q1",
                  percent: 73,
-                 image: '01.png'
+                 image: 'id.png'
              },
              product2: {
                  title: "DAPPS PLATFORM",
@@ -39,7 +39,7 @@
                  rel: "2020",
                  q: "Q2",
                  percent: 12,
-                 image: '02.png'
+                 image: 'dapps.png'
              },
              product3: {
                  title: "REPUBLIA BANK",
@@ -47,7 +47,7 @@
                  rel: "2019",
                  q: "Q1",
                  percent: 100,
-                 image: '03.png'
+                 image: 'bank.png'
              },
              product4: {
                  title: "REPUBLIA SC PLATFROM",
@@ -55,7 +55,7 @@
                  rel: "2020",
                  q: "Q3",
                  percent: 34,
-                 image: '04.png'
+                 image: 'sc.png'
              },
              product5: {
                  title: "CLOUDX",
@@ -63,7 +63,7 @@
                  rel: "2021",
                  q: "Q4",
                  percent: 7,
-                 image: '05.png'
+                 image: 'cloud.png'
              },
              product6: {
                  title: "REPUBLIA EXCHANGE",
@@ -71,7 +71,7 @@
                  rel: "2019",
                  q: "Q4",
                  percent: 23,
-                 image: '06.png'
+                 image: 'exchange.png'
              },
              product7: {
                  title: " REPUBLIA WALLET",
@@ -79,7 +79,7 @@
                  rel: "2019",
                  q: "Q1",
                  percent: 100,
-                 image: '03.png'
+                 image: 'wallet.png'
              },
              product8: {
                  title: " REPUBLIA VOTING",
@@ -87,7 +87,7 @@
                  rel: "2019",
                  q: "Q2",
                  percent: 57,
-                 image: '04.png'
+                 image: 'voting.png'
              },
              
 
