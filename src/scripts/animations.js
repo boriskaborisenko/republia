@@ -10,7 +10,7 @@ smoothscroll.polyfill();
 
 
 
-var words = ['FASTEST', 'safest', 'scalability'];
+var words = ['THE FASTEST', 'the safest', 'most scalable'];
 let word = document.querySelector('#fsc1');
 let rs = 'ABCDEFGHIJKLMONPQRSTUVWXYZ@#$%&+=0987654321';
 
