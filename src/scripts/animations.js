@@ -239,7 +239,7 @@ tabs.forEach(function (element) {
 
 
 
-var roadmapYear = '2019';
+
 const roadmapYearBtn = document.querySelectorAll('.yearBtn');
 roadmapYearBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
@@ -269,7 +269,8 @@ roadmapYearBtn.forEach(function (element) {
         tl.to("#r_screen", 0.25, {
             opacity: 0,
             onComplete: function () {
-                document.getElementById('r_screen').innerHTML = data2.content.EN.roadmap[roadmapYear].q1;
+                buildSlide(data2.content.EN.roadmap[roadmapYear].q1);
+                //document.getElementById('r_screen').innerHTML = data2.content.EN.roadmap[roadmapYear].q1;
             }
         }).to("#r_screen", 0.25, {
             opacity: 1
@@ -278,7 +279,7 @@ roadmapYearBtn.forEach(function (element) {
     });
 });
 
-var qTab = 'q1';
+
 const qYearBtn = document.querySelectorAll('.r_tab');
 qYearBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
@@ -292,7 +293,8 @@ qYearBtn.forEach(function (element) {
         tl.to("#r_screen", 0.25, {
             opacity: 0,
             onComplete: function () {
-                document.getElementById('r_screen').innerHTML = data2.content.EN.roadmap[roadmapYear][qTab];
+                buildSlide(data2.content.EN.roadmap[roadmapYear][qTab]);
+                //document.getElementById('r_screen').innerHTML = data2.content.EN.roadmap[roadmapYear][qTab];
             }
         }).to("#r_screen", 0.25, {
             opacity: 1
@@ -300,6 +302,40 @@ qYearBtn.forEach(function (element) {
 
     });
 });
+
+
+//BUILD SLIDE
+
+var roadmapYear = '2018';
+var qTab = 'q4';
+startScreen(qTab, roadmapYear);
+
+function startScreen(q, year) {
+    document.querySelector('#' + q).classList.add('r_tab_active');
+    document.querySelector('#r_date').innerHTML = year;
+    const yearSel = document.querySelector('#year'+year);
+    yearSel.classList.add('active_y');
+    yearSel.children[0].classList.add('active_yt');
+    buildSlide(data2.content.EN.roadmap[roadmapYear][qTab]);
+}
+
+function buildSlide(q){
+    const screen = document.querySelector('#r_screen');
+    screen.innerHTML = '';
+    q.map(item => {
+        screen.innerHTML += `
+        <div class="onePoint">
+        <div class="roadmap_checkbox inl_m"></div>
+        <div class="roadmap_item inl_m">${item}</div>
+        </div>
+        `;
+    });
+}
+
+
+
+
+
 
 
 

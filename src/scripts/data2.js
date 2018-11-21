@@ -130,34 +130,34 @@
          },
          roadmap:{
              2016:{
-                q1: "q1-2016",
-                q2: "Project technical specification",
-                q3: "Wrapping WP, TP",
-                q4: "q4-2016"
+                q1: ["q1-2016"],
+                q2: ["Project technical specification"],
+                q3: ["Wrapping WP, TP"],
+                q4: ["q4-2016"]
              },
              2017: {
-                 q1: "Beginning of the development",
-                 q2: "q2-2017",
-                 q3: "Beginning of the development",
-                 q4: "q4-2017"
+                 q1: ["Beginning of the development"],
+                 q2: ["q2-2017"],
+                 q3: ["Beginning of the development"],
+                 q4: ["q4-2017"]
              },
              2018: {
-                 q1: "MVP Prototype test",
-                 q2: "MVP implementation",
-                 q3: "Project launch <br><br> Bounty Campaign launch",
-                 q4: "Pre-sale <br><br> Roadshow <br><br> End of Bounty Campaign"
+                 q1: ["MVP Prototype test"],
+                 q2: ["MVP implementation"],
+                 q3: ["Project launch", "Bounty Campaign launch"],
+                 q4: ["Pre-sale", "Roadshow", "End of Bounty Campaign"]
              },
              2019: {
-                 q1: "Public Sale. Start of the first <br><br> Public report on the results of the first round of Public Sale <br><br> Development of ERC-20 token <br><br> Exchange listing <br><br> Republia Wallet",
-                 q2: "Bank Classic <br><br> Voting system launch <br><br> Distribution of rewards for participation in the bounty campaign",
-                 q3: "Test-net launch <br><br> Emporium Exchange MVP Release",
-                 q4: "Emporium Exchange release <br><br> CloudX test-version launch"
+                 q1: ["Public Sale. Start of the first","Public report on the results of the first round of Public Sale","Development of ERC-20 token","Exchange listing","Republia Wallet"],
+                 q2: ["Bank Classic","Voting system launch","Distribution of rewards for participation in the bounty campaign"],
+                 q3: ["Test-net launch","Emporium Exchange MVP Release"],
+                 q4: ["Emporium Exchange release","CloudX test-version launch"]
              },
              2020: {
-                 q1: "Public Sale end <br><br> Republia Blockchain release <br><br> Swap token2coin smart contract",
-                 q2: "Rialto Exchange release <br><br> DAPPS Platform launch <br><br> Launch of the first project on DAPPS Platform",
-                 q3: "Smart Contract Platform release (Pattern mode)",
-                 q4: "Smart Contract Platform release (Dev mode) <br><br> CloudX launch"
+                 q1: ["Public Sale end", "Republia Blockchain release", "Swap token2coin smart contract"],
+                 q2: ["Rialto Exchange release","DAPPS Platform launch","Launch of the first project on DAPPS Platform"],
+                 q3: ["Smart Contract Platform release (Pattern mode)"],
+                 q4: ["Smart Contract Platform release (Dev mode)","CloudX launch"]
              },
          }
         

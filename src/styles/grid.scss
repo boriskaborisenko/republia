@@ -1244,7 +1244,8 @@ background:$blue;
     width:100%;
     height:100%;
     position:absolute;
-    padding:70px;
+    padding:110px 70px;
+    box-sizing: border-box;
 }
 
 .y_line{
@@ -1295,8 +1296,30 @@ background:$blue;
 .active_yt{
     font-weight: 900;
     color:$blue;
-
 }
+
+
+.onePoint{
+    //background:olive;
+    margin-bottom:10px;
+    position:relative;
+    width:100%;
+}
+
+.roadmap_checkbox{
+    width:40px;
+    height:40px;
+    background:url('../../public/images/svg/point.svg') center center no-repeat;
+    margin-right:10px;
+}
+
+.roadmap_item{
+    width:calc(100% - 70px);
+    font-weight: 700;
+    font-size:1rem;
+    color:$dark;
+}
+
 
 
 .news{
