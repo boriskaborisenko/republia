@@ -994,6 +994,43 @@
 }
 
 
+.all_news {
+    box-sizing: border-box;
+    padding: 30px 0px 0px 20px;
+    //background:olive;
+}
+
+.one_new {
+    padding-bottom: 55px;
+    padding-left: 20px;
+    border-left: 1px solid $blue;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+}
+
+.new_title_and_hashtags {
+    max-width: calc(100% - 30px);
+    //background:red;
+    display: inline-block;
+    vertical-align: top;
+}
+.new_title_link {
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    background: url('../../public/images/svg/gonews.svg') center center no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.31rem;
+}
+.news_more {
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+
 .partners {
     padding: 50px  0 10px 0;
     background: #F8F8F8;
