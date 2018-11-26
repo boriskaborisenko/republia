@@ -1,5 +1,7 @@
 import '../styles/index.scss';
 import {db} from './firebase';
+import 'moment';
+const moment = require('moment');
 
 
 db.collection("news").orderBy("date", "desc").get().then(function (querySnapshot) {
@@ -15,10 +17,10 @@ db.collection("news").orderBy("date", "desc").get().then(function (querySnapshot
             });
         }
 
-
+        const date = moment.unix(el.date.seconds).utcOffset("+02:00").format('DD.MM.YYYY');
         let block = `<div class="one_full_news inl_t">
                         <div class="full_date_and_tags">
-                            <div class="new_date inl_m fix_date">${el.date}</div>
+                            <div class="new_date inl_m fix_date">${date}</div>
                             <div class="hashtags inl_m fix_tags">
                                 <ul>
                                 ${hashes}
@@ -51,3 +53,8 @@ function glueMenu() {
 window.onscroll = function () {
     glueMenu();
 };
+
+document.querySelector('.mobburger').addEventListener('click', function (burger) {
+    document.querySelector('.mobmenu_screen').classList.toggle('hide_nav');
+    document.querySelector('.mobburger').classList.toggle('burgclose');
+});

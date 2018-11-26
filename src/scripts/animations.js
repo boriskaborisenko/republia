@@ -90,6 +90,19 @@ function buildWord() {
 }
 
 
+window.onload = function ready() {
+    const url_string = window.location.href;
+    const url = new URL(url_string);
+    const section = url.searchParams.get("section");
+    if (section !== null && section !== ''){
+        scrollToDiv('#go' + section, 50);
+        window.history.pushState("object or string", "Title", "/");
+    }
+}
+
+
+
+
 var menu = ['Prods', 'Docs', 'Team', 'Roadmap', 'Video'];
 menu.forEach(function (elem) {
     let to = '#to'+elem;
@@ -131,6 +144,8 @@ const scrollToDiv = (selector, distance) => {
         behavior: 'smooth'
     });
 }
+
+
 
 
 window.onscroll = function () {

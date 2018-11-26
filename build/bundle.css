@@ -4169,7 +4169,8 @@ body, html {
   display: none; }
 
 .partners,
-.ss_btns {
+.ss_btns,
+.all_langs {
   display: none; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
